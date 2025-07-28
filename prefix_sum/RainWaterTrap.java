@@ -1,5 +1,7 @@
 package prefix_sum;
 
+//  TC: O(N)
+// SC: O(N)
 public class RainWaterTrap {
     public int trap(final int[] A) {
 
