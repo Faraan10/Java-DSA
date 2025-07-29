@@ -1,6 +1,9 @@
 package arrays;
 
 public class FirstMissingInteger {
+
+    // TC: O(N) // 2 loops N + N = 2N,  constants are ignored so O(N)
+    // SC: O(N) // as I am using boolean array additional space
     public int firstMissingPositive(int[] A) {
 
         int N=A.length;
