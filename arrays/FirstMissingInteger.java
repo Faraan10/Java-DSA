@@ -26,7 +26,8 @@ public class FirstMissingInteger {
     // }
 
 
-    
+    // TC: O(N) using only 1 while loop 
+    // SC: O(1) no additional space used
     public int firstMissingPositive(int[] A) {
 
         int N=A.length;
