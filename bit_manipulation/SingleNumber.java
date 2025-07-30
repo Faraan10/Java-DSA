@@ -2,6 +2,8 @@ package bit_manipulation;
 
 public class SingleNumber {
     
+    // TC: O(N)  only 1 loop till N
+    // SC: O(1) No additional space used
     public int getNumber(int[] arr){
 
         int N=arr.length;
