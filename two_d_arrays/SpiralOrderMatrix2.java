@@ -1,7 +1,9 @@
 package two_d_arrays;
 
 public class SpiralOrderMatrix2 {
-    
+
+    // TC: O(N^2)
+    // SC:O(1)
     public int[][] generateMatrix(int A) {
 
         int[][] mat = new int[A][A];
