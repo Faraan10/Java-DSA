@@ -1,6 +1,8 @@
 package arrays;
 
 public class NextPermutation {
+    // TC: O(N)
+    // SC: O(1)
     public int[] nextPermutation(int[] A) {
 
         int n = A.length;
