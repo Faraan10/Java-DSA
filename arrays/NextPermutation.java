@@ -1,7 +1,7 @@
 package arrays;
 
 public class NextPermutation {
-    // TC: O(N)
+    // TC: O(N)  2 while loops 2N ignoring constants so O(N)
     // SC: O(1)
     public int[] nextPermutation(int[] A) {
 
