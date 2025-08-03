@@ -2,7 +2,7 @@ package arrays;
 
 public class NextPermutation {
     // TC: O(N)  2 while loops 2N ignoring constants so O(N)
-    // SC: O(1)
+    // SC: O(1)  as no additional space was used
     public int[] nextPermutation(int[] A) {
 
         int n = A.length;
