@@ -2,8 +2,8 @@ package bit_manipulation;
 
 public class SingleNumberThree {
     
-    // TC: O(N)
-    // SC: O(1) 
+    // TC: O(N) 2 for loops 2N = O(N)
+    // SC: O(1) as no extra space used only an array returning it
     public int[] solve(int[] A) {
 
         int xorTotal = 0;
