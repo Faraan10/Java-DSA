@@ -1,7 +1,9 @@
 package recursion;
 
 public class PrintDecrease {
-    
+
+    // TC: O(N)
+    // SC: O(N) recursion uses stack space
     public static void print(int N){
 
         if(N==0){
