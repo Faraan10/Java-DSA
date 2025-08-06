@@ -2,6 +2,9 @@ package recursion;
 
 public class PrintIncreasing{
 
+    // TC: O(N)
+    // SC: O(N) stack space used
+
     public static void print(int N){
 
         if(N==1){
