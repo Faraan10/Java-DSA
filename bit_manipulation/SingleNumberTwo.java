@@ -1,6 +1,9 @@
 package bit_manipulation;
 
 public class SingleNumberTwo {
+
+    // TC: O(N)
+    // SC: O(1)
     public int singleNumber(final int[] A) {
 
         int result=0;
