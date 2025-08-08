@@ -1,7 +1,8 @@
 package recursion;
 
 public class DecreasingIncreasing {
-    
+    // TC: O(N)
+    // SC: O(N) stack space
     public void print(int N){
 
         if(N==0){
