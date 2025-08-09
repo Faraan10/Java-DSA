@@ -1,7 +1,7 @@
 package recursion;
 
 public class Fibonacci {
-    // TC: O(2 power N)
+    // TC: O(2 power N) because it recalculates the same sub problems many times
     // SC: O(N) recurison stack
     public int findAthFibonacci(int A) {
 
