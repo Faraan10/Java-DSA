@@ -2,8 +2,8 @@ package recursion;
 
 public class SumOfDigits {
 
-    // TC: O(N)
-    // SC: O(N) recursion stack
+    // TC: O(N) i.e: total no of functional calls * time taken by one function
+    // SC: O(N) recursion stack  i.e: max depth taken by function calls * space per function call
     public int sum(int N){
 
         if(N==0){
