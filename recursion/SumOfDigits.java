@@ -3,6 +3,7 @@ package recursion;
 public class SumOfDigits {
 
     // TC: O(N)
+    // SC: O(N) recursion stack
     public int sum(int N){
 
         if(N==0){
