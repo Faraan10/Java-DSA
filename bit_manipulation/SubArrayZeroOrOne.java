@@ -1,6 +1,9 @@
 package bit_manipulation;
 
 public class SubArrayZeroOrOne {
+
+    // TC: O(N)
+    // SC: O(1)
     public int subarraysWithOR1(int[] A) {
 
         int n = A.length;
