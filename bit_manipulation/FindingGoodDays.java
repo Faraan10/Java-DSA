@@ -1,6 +1,8 @@
 package bit_manipulation;
 
 public class FindingGoodDays {
+    // TC: O( log A)
+    // SC: O(1)
     public int solve(int A) {
 
         int count=0;
