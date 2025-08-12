@@ -12,7 +12,7 @@ public class FastPower {
 
         // by using this below variable we will be computing the value 
         // only once and use it inside the return recursive statements
-        // avoiding repetitive calls so TC: O(log B) 
+        // avoiding repetitive calls by calling them 2 times in return statements 
         long half= power(A, B/2);
 
         // if B is even then just multiplying 2 halves
