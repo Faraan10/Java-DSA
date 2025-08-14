@@ -5,18 +5,21 @@ public class CountPairSum {
     // TC: O(N^2) 
     // SC: O(1)
 
-    public int solve(int[] A, int B) {
+    // public int solve(int[] A, int B) {
 
-        int N=A.length;
-        int count=0;
+    //     int N=A.length;
+    //     int count=0;
         
-        for(int i=0; i<N; i++){
-            for(int j=i+1; j<N; j++){
-                if(A[i]+A[j]==B){
-                    count++;
-                }
-            }
-        }
-        return count%1000000007;
-    }
+    //     for(int i=0; i<N; i++){
+    //         for(int j=i+1; j<N; j++){
+    //             if(A[i]+A[j]==B){
+    //                 count++;
+    //             }
+    //         }
+    //     }
+    //     return count%1000000007;
+    // }
+
+    // optimized using hashMap
+    
 }
