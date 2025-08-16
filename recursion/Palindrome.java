@@ -1,7 +1,8 @@
 package recursion;
 
 public class Palindrome {
-    
+    // TC: O(S)
+    // SC: O(S) due to recursion stack
     public int check(String S, int start, int end){
 
         if(start>=end){
