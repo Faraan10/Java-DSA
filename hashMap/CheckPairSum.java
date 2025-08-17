@@ -4,7 +4,8 @@ import java.util.HashMap;
 
 public class CheckPairSum {
     
-    
+    // TC: O(B)
+    // SC: O(B) worst case as we are using hashmap
     public int solve(int A, int[] B) {
 
         HashMap<Integer, Integer> hm=new HashMap<>();
