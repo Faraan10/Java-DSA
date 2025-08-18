@@ -3,6 +3,8 @@ package hashing;
 import java.util.HashSet;
 
 public class SubArrayZeroSum {
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int[] A) {
 
         int N=A.length;
