@@ -50,6 +50,12 @@ public class SubArraySumEqualsK {
         
         int N=A.length;
         HashMap<Integer, Integer> hm=new HashMap<>();
+
+        // Problem at index 0
+        // When the subarray starts at index 0, there is no i-1.
+        // That’s why we artificially assume there was a prefixSum = 0 before the array started.
+
+        // That’s what map.put(0, 1) represents → "we have seen prefix sum 0 once before starting."
         hm.put(0,1);
 
         int prefixSum=0;
