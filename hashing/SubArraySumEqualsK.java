@@ -43,7 +43,9 @@ public class SubArraySumEqualsK {
     //     return count;
     // }
 
-
+    // most optimized using hashmap
+    // TC: O(N)
+    // SC: O(N) using hashmap
     public int solve(int[] A, int B) {
         
         int N=A.length;
