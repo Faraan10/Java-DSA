@@ -24,6 +24,8 @@ public class kadenesAlgorithm {
 
     // in the below approach I am also including start and end 
     // index of the subarray
+    // TC: O(N)
+    // SC: O(1)
     public int[] maxSubArray(int[] arr){
         
         int temp_start=0;
