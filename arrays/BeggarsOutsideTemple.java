@@ -27,6 +27,9 @@ public class BeggarsOutsideTemple {
     // }
     
 
+    // Beggars Outside Temple problem
+    // TC: O(N+Q) N= array length  Q=Queries length
+    //SC: O(1)
     public int[] ContinousSumQuery(int A, int[][] B){
 
         int[] array=new int[A];
