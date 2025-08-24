@@ -2,6 +2,8 @@ package arrays;
 
 public class Flip {
     
+    // TC: O(N)
+    // SC: O(1)
     public int[] flip(String A) {
 
         int N=A.length();
