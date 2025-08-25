@@ -2,6 +2,8 @@ package recursion;
 
 public class MaxOfArray {
     
+    // TC: O(N)
+    // SC: O(N) stack space
     public int Max(int[] arr, int start, int end, int high){
 
         if(start>end){
