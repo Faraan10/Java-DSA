@@ -2,6 +2,10 @@ package sorting;
 
 public class QuickSort {
     
+    // TC: O(NlogN) for best and average cases
+    // worst case O(N^2)
+    // SC: O(logN) for best and average cases
+    // worst case O(N)
     public int partition(int[] arr, int s, int e){
 
         int pivot=arr[e];
