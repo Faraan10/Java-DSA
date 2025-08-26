@@ -2,6 +2,8 @@ package sorting;
 
 public class PartitionIndex {
     
+    // TC: O(N) 
+    // SC: O(1)
     public int partition(int[] arr){
 
         int N=arr.length;
@@ -22,7 +24,7 @@ public class PartitionIndex {
         int temp=arr[N-1];
         arr[N-1]=arr[j];
         arr[j]=temp;
-        
+
         return j;
     }
 }
