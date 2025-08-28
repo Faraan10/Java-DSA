@@ -2,7 +2,8 @@ package BinarySearch;
 
 public class SortedInsertPosition {
     
-    
+    // TC: O(logN) as we are dividing the array by 2 every time 
+    // SC: O(1) no extra space used
     public int searchInsert(int[] A, int B) {
 
         int value=A.length;
