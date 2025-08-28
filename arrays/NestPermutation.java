@@ -2,6 +2,8 @@ package arrays;
 
 public class NestPermutation {
     
+    // TC: O(N)
+    // SC: O(1) no extra space used
     public int[] reverse(int[] arr, int start, int end){
 
         while(start<end){
