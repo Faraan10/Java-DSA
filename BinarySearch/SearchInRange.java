@@ -1,7 +1,9 @@
 package BinarySearch;
 
 public class SearchInRange {
-    
+    // Bruteforce method
+    // TC: O(N)
+    // SC: O(1)
     public int[] searchRange(final int[] A, int B) {
 
         int N=A.length;
