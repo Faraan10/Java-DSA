@@ -24,7 +24,10 @@ public class SearchInRange {
         return new int[] {leftMost, rightMost};
     }
 
-    
+
+    // Binary search method
+    // TC: O(logN)
+    // SC: O(1)
     public static int leftMostIndex(int[] arr, int K){
 
         int low=0;
