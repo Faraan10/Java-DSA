@@ -2,8 +2,11 @@ package BinarySearch;
 
 public class PeakElement {
 
+        
+    // TC: O(logN)
+    // SC: O(1)
     public int solve(int[] A) {
-
+        
         int low=0;
         int high=A.length-1;
 
