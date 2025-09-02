@@ -1,7 +1,8 @@
 package sliding_window;
 
 public class MinimumSwaps {
-
+    // TC: O(N)
+    // SC: O(1)
     public int solve(int[] A, int B) {
 
         int N=A.length;
