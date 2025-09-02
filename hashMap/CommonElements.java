@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 public class CommonElements {
     
-    // TC: O(N)
+    // TC: O(N+M) 
+    // 1) fist loop storing values in hashmap
+    // 2) second loop iterating over M for comparing
     // SC: O(N) using hashmap
     public int[] solve(int[] A, int[] B) {
       // Just write your code below to complete the function. Required input is available to you as the function arguments.
