@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class CountUniqueElements {
     
+    // TC: O(N) // iterating over the array 2 times so 2N ignore constants ie:O(N)
+    // SC: O(N) as we are using hashmap
     public int solve(int[] A) {
 
         int N=A.length;
