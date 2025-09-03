@@ -12,6 +12,7 @@ public class Student {
 
     public static void main(String[] args){
 
+        // Student() is the default constructor
         Student s1=new Student();
 
         s1.printDetails(); // it prints null null 0 at variables place as they are not defined 
