@@ -13,6 +13,8 @@ class ListNode{
 
 public class KthElement {
     
+    // TC: O(B)
+    // SC: O(1)
     public int solve(ListNode A, int B) {
 
         ListNode temp=A;
