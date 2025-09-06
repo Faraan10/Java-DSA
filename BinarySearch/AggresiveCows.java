@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class AggresiveCows {
     
-    
+    // TC: O(NlogN) using helper function which is iterating atmost N times
+    // SC: O(1)
     public static boolean isPossible(int[] arr, int cowsNeeded, int distance){
 
         int cows=1;
