@@ -2,7 +2,8 @@ package BinarySearch;
 
 public class MaxHeightOfStaircase {
     
-
+    // TC: O(log N)
+    // SC: O(1)
     public int solve(int A) {
 
         long low=1;
