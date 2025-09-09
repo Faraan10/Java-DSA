@@ -2,6 +2,8 @@ package linkedList.singleLinkedList;
 
 public class InsertLinkedList {
     
+    // TC: O(N)
+    // SC: O(1) no extra space used
     public ListNode solve(ListNode A, int B, int C) {
 
         ListNode temp=A;
