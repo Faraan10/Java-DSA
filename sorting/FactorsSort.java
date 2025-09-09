@@ -5,6 +5,8 @@ import java.util.Comparator;
 
 public class FactorsSort {
     
+    // TC: O(N logN * val)
+    //SC: O(N)
     public static int FactorsCount(int val){
 
         int count=0;
