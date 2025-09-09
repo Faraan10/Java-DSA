@@ -2,6 +2,8 @@ package linkedList.singleLinkedList;
 
 public class DeletePositionInLinkedList {
     
+    // TC: O(N)
+    // SC: O(1)
     public ListNode solve(ListNode A, int B) {
 
         ListNode temp=A;
