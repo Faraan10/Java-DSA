@@ -42,8 +42,9 @@ public class MatrixSearch {
     //     return 0;
     // }
 
-
-
+    // Most optimized approach using binary search when matrix is sorted
+    // TC: O(log N*M) as we are flattening the array out and traversing by dividing the array using binarysearch 
+    // SC: O(1)
     public int searchMatrix(int[][] A, int B) {
 
         int N=A.length;
