@@ -2,6 +2,9 @@ package BinarySearch;
 
 public class MatrixSearch {
     
+    // TC: O(N*M) i loop till N-1 and j loop till M-1 N*M
+    // SC: O(1)
+    // bruteforce approach
     public int searchMatrix(int[][] A, int B) {
 
         int N=A.length;
