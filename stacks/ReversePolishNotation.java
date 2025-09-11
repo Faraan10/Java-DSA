@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class ReversePolishNotation {
     
+    // TC: O(N) iterating through the array only once
+    // SC: O(N) stack used
     public int evalRPN(String[] A) {
         
         int N=A.length;
