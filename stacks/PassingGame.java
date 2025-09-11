@@ -4,7 +4,8 @@ import java.util.Stack;
 
 public class PassingGame {
     
-  
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int A, int B, int[] C) {
 
         Stack<Integer> st=new Stack<Integer>();
