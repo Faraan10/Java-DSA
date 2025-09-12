@@ -3,7 +3,8 @@ package stacks;
 import java.util.Stack;
 
 public class BalancedParenthesis {
-    
+    // TC: O(N)
+    // SC: O(N)
     public int solve(String A) {
 
         int N=A.length();
