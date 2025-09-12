@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class BalancedParenthesis {
     // TC: O(N)
-    // SC: O(N)
+    // SC: O(N) using stack data structure
     public int solve(String A) {
 
         int N=A.length();
