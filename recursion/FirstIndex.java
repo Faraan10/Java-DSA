@@ -1,6 +1,9 @@
 package recursion;
 
 public class FirstIndex {
+
+    // TC: O(N)
+    // SC: O(N) recursion stack
     public int FirstIndexRecur(int[] A, int B) {
 
         return findIndex(A, B, 0);
