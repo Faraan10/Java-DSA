@@ -1,7 +1,7 @@
 package recursion;
 
 public class FirstIndex {
-    public int FirstIndex(int[] A, int B) {
+    public int FirstIndexRecur(int[] A, int B) {
 
         return findIndex(A, B, 0);
     }
