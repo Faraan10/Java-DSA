@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class NearestSmallerElement {
     
+    // TC: O(N)
+    // SC: O(N)
     public int[] prevSmaller(int[] A) {
 
     int[] arr = new int[A.length];
