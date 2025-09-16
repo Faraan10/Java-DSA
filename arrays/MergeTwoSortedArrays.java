@@ -2,8 +2,9 @@ package arrays;
 
 public class MergeTwoSortedArrays {
     
-    // TC: O(N)
-    // SC: O(N)
+    // TC: O(N+M) iterating over 2 arrays A and B
+    // SC: O(N+M) for the merged array 
+    // and Auxiliary space is O(1) no extra spaced used only just pointers variables 
     public int[] solve(final int[] A, final int[] B) {
 
         int N=A.length;
