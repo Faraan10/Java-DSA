@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class DoubleCharacterTrouble{
 
-    // TC: O(N)
+    // TC: O(N) Iterating through the string once 
     // SC: O(N) using stack
     public String solve(String A){
 
