@@ -3,8 +3,8 @@ package arrays;
 public class DutchNationalFlag {
     
     // TC: O(N)
-    // SC: O(N)
-    // Auxiliary space: O(N)
+    // SC: O(N) using and array returning as output
+    // Auxiliary space: O(N) no additional space excluding input and output
     public int[] sortColors(int[] A) {
 
         int N=A.length;
