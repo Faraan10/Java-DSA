@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class DoubleCharacterTrouble{
 
+    // TC: O(N)
+    // SC: O(N) using stack
     public String solve(String A){
 
         int N=A.length();
