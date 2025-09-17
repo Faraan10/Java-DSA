@@ -3,7 +3,7 @@ package queues;
 import java.util.Stack;
 
 public class QueueUsingStack {
-    
+    // TC: push: O(1) pop: amortized O(1)
     public static class UserQueue {
     /** Initialize your data structure here. */
     static Stack<Integer> st;
