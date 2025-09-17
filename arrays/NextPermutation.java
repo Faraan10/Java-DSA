@@ -1,6 +1,6 @@
 package arrays;
 
-public class NestPermutation {
+public class NextPermutation {
     
     // TC: O(N)
     // SC: O(1) no extra space used
