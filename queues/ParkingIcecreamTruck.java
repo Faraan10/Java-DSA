@@ -5,6 +5,8 @@ import java.util.LinkedList;
 
 public class ParkingIcecreamTruck {
     
+    // TC: O(N)
+    // SC: O(N)
     public int[] slidingMaximum(final int[] A, int B) {
 
         int N=A.length;
