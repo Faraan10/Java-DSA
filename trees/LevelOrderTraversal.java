@@ -22,8 +22,8 @@ class TreeNode {
 
 public class LevelOrderTraversal {
     
-    // TC: O(N)
-    // SC: O(N)
+    // TC: O(A)
+    // SC: O(A)
     public ArrayList<ArrayList<Integer>> solve(TreeNode A) {
 
         Queue<TreeNode> que=new LinkedList<>();
