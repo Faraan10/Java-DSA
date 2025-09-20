@@ -17,7 +17,9 @@ class TreeNode{
 }
 
 public class PreOrderTraversal {
-    
+
+    // TC: O(A)
+    // SC: O(A) recursion stack space
     public static ArrayList<Integer> PreOrder(TreeNode A){
 
         ArrayList<Integer> ans=new ArrayList<>();
