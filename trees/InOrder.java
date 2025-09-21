@@ -17,6 +17,8 @@ class TreeNode{
 
 public class InOrder {
     
+    // TC: O(N)
+    // SC: O(N)
     public static ArrayList<Integer> solve(TreeNode A){
 
         ArrayList<Integer> ans=new ArrayList<Integer>();
