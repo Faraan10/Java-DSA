@@ -15,6 +15,8 @@ class TreeNode{
 
 public class SearchInBST{
 
+    // TC: O(H) it goes down every level so in worst cases it goes down to O(H) height of tree
+    // SC: O(1)  no space used
     public int solve(TreeNode A, int B){
 
         while(A!=null){
