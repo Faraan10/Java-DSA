@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class postOrder {
     
+    // TC: O(N)
+    // SC: O(H)
     public ArrayList<Integer> postorderTraversal(TreeNode A) {
 
         ArrayList<Integer> ans=new ArrayList<>();
