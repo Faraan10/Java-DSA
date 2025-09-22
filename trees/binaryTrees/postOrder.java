@@ -2,6 +2,20 @@ package trees.binaryTrees;
 
 import java.util.ArrayList;
 
+// TreeNode class
+class TreeNode{
+
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x){
+        x=val;
+        left=null;
+        right=null;
+    }
+}
+
 public class postOrder {
     
     // TC: O(N)
