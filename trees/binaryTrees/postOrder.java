@@ -9,6 +9,7 @@ class TreeNode{
     TreeNode left;
     TreeNode right;
 
+    // constructor 
     TreeNode(int x){
         x=val;
         left=null;
