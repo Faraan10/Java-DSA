@@ -63,6 +63,8 @@ public class InsertInBST {
  * }
  */
 // class Solution {
+//     TC: O(h)
+//     SC: O(h) for recursion stack
 //     public TreeNode insertIntoBST(TreeNode root, int val) {
         
 //         TreeNode temp=root;
