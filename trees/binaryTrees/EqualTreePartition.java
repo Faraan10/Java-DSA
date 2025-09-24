@@ -6,6 +6,8 @@ public class EqualTreePartition {
     long totalSum = 0;
     TreeNode root;
 
+    // TC: O(H)
+    // SC: O(H)
     public int solve(TreeNode A) {
         root = A;
 
