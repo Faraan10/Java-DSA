@@ -6,7 +6,7 @@ public class EqualTreePartition {
     long totalSum = 0;
     TreeNode root;
 
-    // TC: O(H)
+    // TC: O(N) // traverses through each node once for check and once for sum so O(2N) and constants get irnored
     // SC: O(H)
     public int solve(TreeNode A) {
         root = A;
