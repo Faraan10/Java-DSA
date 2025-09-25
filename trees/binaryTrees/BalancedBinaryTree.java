@@ -16,6 +16,8 @@ class TreeNode{
 
 public class BalancedBinaryTree {
     
+    // TC: O(N)
+    // SC: O(H)
     public int solve(TreeNode A){
 
         if(check(A) != -1){ // returning size of binary tree if balanced else -1
