@@ -2,6 +2,8 @@ package trees.binaryTrees;
 
 public class PathSum {
     
+    // TC: O(N)
+    // SC: O(H)
     public int hasPathSum(TreeNode A, int B) {
 
         if(A==null){
