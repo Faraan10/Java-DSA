@@ -2,6 +2,8 @@ package BinarySearch;
 
 public class AllocateBooks {
     
+    // TC: O(N* log(sum))
+    // SC: O(1)
     public static boolean isPossible(int[] arr, int N, int B, int mid){
 
         int students=1;
