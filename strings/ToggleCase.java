@@ -2,6 +2,21 @@ package strings;
 
 public class ToggleCase {
 
+    public String solveBrute(String A) {
+
+        int N=A.length();
+        String str="";
+
+        for(int i=0; i<N; i++){
+            if(A.charAt(i)>='a' && A.charAt(i)<='z'){
+                str=str+(char)(A.charAt(i)-32);
+            }else{
+                str=str+(char)(A.charAt(i)+32);
+            }
+        }
+        return str;
+    }
+
     // TC: O(N)
     // SC: O(N)
     public String solve(String A) {
