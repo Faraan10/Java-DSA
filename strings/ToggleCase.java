@@ -2,6 +2,8 @@ package strings;
 
 public class ToggleCase {
 
+    // TC: O(N)
+    // SC: O(N)
     public String solve(String A) {
         
         int N=A.length();
