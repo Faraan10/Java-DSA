@@ -3,6 +3,7 @@ package strings;
 public class ToggleCase {
     
     // TC: O(N^2) as we are concanating strings every time when we are creating new string as strings are immutable in java
+    // Each str = str + something creates a new string, copying all characters from the old str.
     // SC: O(N)
     public String solveBrute(String A) {
 
