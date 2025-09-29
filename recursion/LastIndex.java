@@ -2,6 +2,8 @@ package recursion;
 
 public class LastIndex {
     
+    // TC: O(N)
+    // SC: O(N) recursion stack
     public int LastIndexFinder(int[] A, int B) {
 
         return helper(A, B, A.length-1);
