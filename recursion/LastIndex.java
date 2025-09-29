@@ -2,7 +2,7 @@ package recursion;
 
 public class LastIndex {
     
-    // TC: O(N)
+    // TC: O(N) // worst case checking all elements 
     // SC: O(N) recursion stack
     public int LastIndexFinder(int[] A, int B) {
 
