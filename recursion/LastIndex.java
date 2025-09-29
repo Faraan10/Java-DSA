@@ -2,7 +2,7 @@ package recursion;
 
 public class LastIndex {
     
-    public int LastIndex(int[] A, int B) {
+    public int LastIndexFinder(int[] A, int B) {
 
         return helper(A, B, A.length-1);
     }
