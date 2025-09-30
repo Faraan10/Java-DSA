@@ -5,11 +5,12 @@ public class modSum {
     static final int MOD = 1000000007;
     public int solve(int[] A) {
 
+        int N=A.length;
         int[] freq = new int[1001];
 
         // Step 1: Build frequency array
-        for (int num : A) {
-            freq[num]++;
+        for(int i=0; i<N; i++){
+            freq[i]++;
         }
 
         long ans = 0;
