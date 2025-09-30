@@ -2,6 +2,8 @@ package modularArithmetic;
 
 public class modSum {
     
+    // TC: O(N)
+    // SC: O(1)
     static final int MOD = 1000000007;
     public int solve(int[] A) {
 
