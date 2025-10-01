@@ -2,6 +2,8 @@ package modularArithmetic;
 
 public class DeleteOne {
     
+    // TC: O(N)
+    // SC: (N)
     public int solve(int[] A) {
 
         int n = A.length;
