@@ -2,6 +2,8 @@ package sorting;
 
 public class mergeSort {
     
+    // TC: O(N log N)
+    // SC: O(N)
     public int[] solve(int[] A) {
 
         if(A==null || A.length<=1){
