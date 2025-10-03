@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class FindAllPrimes {
     
+    // TC: O(N root N) 
+    // SC: O(N) for taking array 
     public int[] solve(int A) {
         
         if(A<2){
