@@ -30,20 +30,28 @@ public class FindAllPrimes {
 
     public static boolean isPrime(int N){
 
-        int count=0;
+        // int count=0;
 
-        for(int i=1; i*i<=N; i++){
+        // for(int i=1; i*i<=N; i++){
+        //     if(N%i==0){
+        //         if(i==N/i){
+        //             count=count+1;
+        //         }else{
+        //             count=count+2;
+        //         }
+        //     }
+        // }
+        // if(count==2){
+        //     return true;
+        // }
+        // return false;
+
+        // little optimization
+        for(int i=2; i*i<=N; i++){
             if(N%i==0){
-                if(i==N/i){
-                    count=count+1;
-                }else{
-                    count=count+2;
-                }
+                return false;
             }
         }
-        if(count==2){
-            return true;
-        }
-        return false;
+        return true;
     }
 }
