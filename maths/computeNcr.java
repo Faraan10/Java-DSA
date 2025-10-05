@@ -4,6 +4,8 @@ public class computeNcr {
     
     public int solve(int A, int B, int C) {
 
+        // TC: O(A*B)
+        // SC: O(B)
         // dp[n][r] stores the value of nCr
         int[][] dp = new int[A + 1][B + 1];
         for(int i = 0; i <= A; i++) {
