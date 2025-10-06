@@ -2,6 +2,8 @@ package maths;
 
 public class ExcelColumnTitle {
     
+    // TC: O(log A)
+    // SC: O(1)
     public String convertToTitle(int A) {
 
         StringBuilder sb=new StringBuilder();
