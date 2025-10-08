@@ -2,7 +2,8 @@ package mathsAndCombinatorics;
 
 public class CountOfDivisors {
     
-
+    // TC: O(N) overall
+    // SC: O(N) overall
     public int[] solve(int[] A) {
 
         int N=A.length;
