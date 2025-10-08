@@ -1,4 +1,4 @@
-package maths;
+package mathsAndCombinatorics;
 
 import java.util.HashSet;
 

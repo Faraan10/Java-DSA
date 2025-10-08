@@ -1,4 +1,4 @@
-package maths;
+package mathsAndCombinatorics;
 
 public class computeNcr {
     
