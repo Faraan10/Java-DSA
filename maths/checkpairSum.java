@@ -5,7 +5,6 @@ import java.util.HashSet;
 public class checkpairSum {
     
     // TC: O(N)
-    // SC: O(N)
     public int solve(int A, int[] B) {
 
         HashSet<Integer> hs=new HashSet<>();
