@@ -2,6 +2,8 @@ package mathsAndCombinatorics;
 
 public class pascalsTriangle {
     
+    // TC: O(N^2)
+    // SC: O(1) no additional auxilary space used only the output 2d array
     public int[][] solve(int A) {
 
         int[][] matrix=new int[A][A];
