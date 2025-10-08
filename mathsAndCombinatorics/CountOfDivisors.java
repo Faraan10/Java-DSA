@@ -2,7 +2,7 @@ package mathsAndCombinatorics;
 
 public class CountOfDivisors {
     
-    // TC: O(max log(max)) overall
+    // TC: O(N + max * log(max)) overall
     // SC: O(N + max (max is auxilary)) overall
     public int[] solve(int[] A) {
 
