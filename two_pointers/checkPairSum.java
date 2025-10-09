@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class checkPairSum {
     
-
+    // TC: O(N log N)
+    // SC: O(1)
     public int solve(int A, int[] B) {
 
         int i=0;
