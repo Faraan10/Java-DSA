@@ -4,7 +4,8 @@ import java.util.Stack;
 
 public class NextGreater {
     
-
+    // TC: O(N)
+    // SC: O(N)
     public int[] nextGreater(int[] A) {
 
         int N=A.length;
