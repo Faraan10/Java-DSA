@@ -2,6 +2,8 @@ package mathsAndCombinatorics;
 
 public class PrimeSum {
     
+    // TC: O(A log log A)
+    // SC: O(A)
     public int[] primesum(int A) {
 
         boolean[] isPrime = new boolean[A + 1];
