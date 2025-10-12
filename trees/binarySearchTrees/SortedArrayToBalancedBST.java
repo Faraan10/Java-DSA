@@ -2,6 +2,8 @@ package trees.binarySearchTrees;
 
 public class SortedArrayToBalancedBST {
 
+    // TC: O(N)
+    // SC: O(log N)
     public TreeNode sortedArrayToBST(final int[] A) {
 
         return buildBST(A, 0, A.length - 1);
