@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Permutations {
     
+    // TC: O(N* N!)
+    // SC: O(N)
     public ArrayList<ArrayList<Integer>> permute(ArrayList<Integer> A) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         boolean[] used = new boolean[A.size()]; // Track which elements are used
