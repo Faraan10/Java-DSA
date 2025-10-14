@@ -6,6 +6,7 @@ import java.util.List;
 
 public class GenerateAllParenthesis {
     
+    // SC: O(A)
     public String[] generateParenthesis(int A) {
 
          List<String> result = new ArrayList<>();
