@@ -11,7 +11,8 @@ public class ExcelColumnTitle {
         while(A!=0){
 
             A=A-1;
-            sb.append((char)('A'+(A%26)));
+            int rem=A%26;
+            sb.append((char)('A'+rem));
             A=A/26;
         }
         return sb.reverse().toString();
