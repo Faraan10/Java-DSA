@@ -2,6 +2,8 @@ package mathsAndCombinatorics;
 
 public class SortedPermutationRank {
     
+    // TC: O(N^2)
+    // SC: O(N)
     public int findNthRank(String A){
 
         int N=A.length();
