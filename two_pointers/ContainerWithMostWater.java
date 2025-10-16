@@ -4,6 +4,8 @@ public class ContainerWithMostWater {
     
     // TC: O(N)
     // SC: O(1)
+    // formula for this problem: to get the area with most container
+    // Math.min(A[l], A[r])*(r-l)
     public int maxArea(int[] A){
 
         int N=A.length;
