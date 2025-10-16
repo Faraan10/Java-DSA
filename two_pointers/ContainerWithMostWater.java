@@ -2,6 +2,8 @@ package two_pointers;
 
 public class ContainerWithMostWater {
     
+    // TC: O(N)
+    // SC: O(1)
     public int maxArea(int[] A){
 
         int N=A.length;
