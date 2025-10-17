@@ -2,7 +2,8 @@ package mathsAndCombinatorics;
 
 public class SumOfAllNumbersIsOne {
     
-    
+    // TC: O(log A) as we are dividing at every step
+    // SC: O(1)
     public static int solve(int A){
 
         int ans=A;
