@@ -3,11 +3,11 @@ package linkedList.singleLinkedList;
 
 class ListNode{
 
-    int x;
+    int val;
     ListNode next;
 
-    ListNode(int val){
-        x=val;
+    ListNode(int x){
+        val=x;
         next=null;
     }
 }
@@ -38,13 +38,36 @@ public class MiddleElement {
             for(int i=0; i<(size/2)-1; i++){
                 temp=temp.next;
             }
-            return temp.x;
+            return temp.val;
         }else{
             for(int i=0; i<(size/2); i++){
                 temp=temp.next;
             }
-            return temp.x;
+            return temp.val;
         }
+    }
+
+
+    // better approach using fast pointer and slow pointer
+    // also called Tortoise-Hare approach 
+    // TC: O(N)
+    // SC: O(1)
+    public int solveMiddle(ListNode A) {
+
+        if(A==null){
+            return 0;
+        }
+
+        ListNode slow=A;
+        ListNode fast=A;
+        while(fast.next != null && fast.next.next != null) { 
+            slow = slow.next; 
+            fast = fast.next.next; 
+        }
+        if(fast.next !=null){
+            return slow.next.val;
+        }
+        return slow.val;
     }
     
 }
