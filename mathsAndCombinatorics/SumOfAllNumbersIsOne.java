@@ -2,13 +2,15 @@ package mathsAndCombinatorics;
 
 public class SumOfAllNumbersIsOne {
     
-    // TC: O(log A) as we are dividing at every step
+    // when 1<=A<=10 power 9
+    // TC: O(log10 A) as we are dividing 10 at every step we do atmosr 9 operations 
+    // so TC: O(1) so constant time used
     // SC: O(1)
     public static int solve(int A){
 
         int ans=A;
         while(ans>9){
-            ans=sum(A);
+            ans=sum(ans);
         }
         if(ans==1){
             return 1;
