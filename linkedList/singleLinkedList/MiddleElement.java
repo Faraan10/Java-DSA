@@ -14,6 +14,11 @@ class ListNode{
 
 public class MiddleElement {
 
+    // TC: O(A) as calculating size
+    // SC: O(1)
+    // Note: for even element we are taking the first occurence of middle element
+    // for ex: [2,5,4,3] here we have two elements in middle so we are taking 
+    // first here depends on problem constraints and 
     public static int solve(ListNode A){
 
         if(A==null){
