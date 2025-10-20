@@ -2,6 +2,8 @@ package linkedList.singleLinkedList;
 
 public class sortLinkedList {
     
+    // TC: O(N log N)
+    // SC: O(log N)
     public static ListNode middleEle(ListNode A){
 
         ListNode slow=A;
