@@ -2,6 +2,8 @@ package linkedList.singleLinkedList;
 
 public class MergeTwoSortedLinkedLists {
     
+    // TC: O(N+M)
+    // SC: O(1)
     public ListNode mergeTwoLists(ListNode A, ListNode B) {
 
         ListNode head=new ListNode(-1);
