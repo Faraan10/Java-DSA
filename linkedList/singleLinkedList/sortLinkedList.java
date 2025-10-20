@@ -2,8 +2,9 @@ package linkedList.singleLinkedList;
 
 public class sortLinkedList {
     
-    // TC: O(N log N)
-    // SC: O(log N)
+    // TC: O(N log N) 
+    // SC: O(log N) recursion stack, In each recursion call we are dividing array 
+    // into 2 parts so O(log N) atmost space used
     public static ListNode middleEle(ListNode A){
 
         ListNode slow=A;
