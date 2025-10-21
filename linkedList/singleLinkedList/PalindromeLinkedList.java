@@ -2,6 +2,8 @@ package linkedList.singleLinkedList;
 
 public class PalindromeLinkedList {
     
+    // TC: O(N)
+    // SC: O(1)
     public static ListNode middleElement(ListNode A){
 
         ListNode slow=A;
