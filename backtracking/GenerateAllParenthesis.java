@@ -1,7 +1,6 @@
 package backtracking;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class GenerateAllParenthesis {
@@ -12,8 +11,13 @@ public class GenerateAllParenthesis {
 
          List<String> result = new ArrayList<>();
         backtrack(result, "", 0, 0, A);
-        Collections.sort(result);
-        return result.toArray(new String[0]);
+        
+        String[] arr=new String[result.size()];
+
+        for(int i=0; i<arr.length; i++){
+            arr[i]=result.get(i);
+        }
+        return arr;
     }
 
     public static void backtrack(List<String> result, String current, int open, int close, int max) {
