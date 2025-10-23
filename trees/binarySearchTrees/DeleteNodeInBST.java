@@ -2,6 +2,8 @@ package trees.binarySearchTrees;
 
 public class DeleteNodeInBST {
     
+    // TC: O(log N)
+    // SC: O(N)
     public TreeNode solve(TreeNode A, int B) {
 
         return deleteNode(A, B);
