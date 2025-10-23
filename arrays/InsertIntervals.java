@@ -9,6 +9,7 @@ public class InsertIntervals {
 
         arr.add(interval);
 
+        // sorting arraylist based on start times
         Collections.sort(arr, (a, b)-> a.get(0) - b.get(0));
 
 
