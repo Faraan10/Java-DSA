@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 public class DistinctNumbersInWindow {
     
+    // TC: O(N)
+    // SC: O(B)
     public ArrayList<Integer> dNums(ArrayList<Integer> A, int B) {
 
          ArrayList<Integer> result = new ArrayList<>();
