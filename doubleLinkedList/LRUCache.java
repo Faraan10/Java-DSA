@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class LRUCache {
     
-    // TC: O(1)
-    // SC: O(C)
+    // TC: O(1)  as all set() get() removeNode() and InsertBeforeTail() are performing in constant time 
+    // SC: O(C)  as this is the max size of LRU cache as we are storing it is hashmap for getting the data in O(1) time
     class Node{
 
         int key;
