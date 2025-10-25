@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class LRUCache {
     
+    // TC: O(1)
+    // SC: O(C)
     class Node{
 
         int key;
