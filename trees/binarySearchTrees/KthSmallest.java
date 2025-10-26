@@ -4,6 +4,8 @@ public class KthSmallest {
     
     // TC: O(N)
     // SC: O(h)
+
+    // these below are global variables
     int count=0;
     int data=-1;
     int prev=Integer.MIN_VALUE;
