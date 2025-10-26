@@ -2,7 +2,8 @@ package trees.binarySearchTrees;
 
 public class KthSmallest {
     
-    
+    // TC: O(N)
+    // SC: O(h)
     int count=0;
     int data=-1;
     int prev=Integer.MIN_VALUE;
