@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class MorrisInorderTraversal {
     
+    // TC: O(N)
+    // SC: O(1) extra space
     public ArrayList<Integer> solve(TreeNode A) {
 
         ArrayList<Integer> list=new ArrayList<>();
