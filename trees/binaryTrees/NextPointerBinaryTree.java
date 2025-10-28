@@ -53,4 +53,28 @@ public class NextPointerBinaryTree {
             prev.next=null;
         }
     }
+
+
+    // optimized approach
+
+    public void solve(TreeLinkNode root){
+
+        TreeLinkNode head=root;
+
+        while(head != null){
+            TreeLinkNode nextHead=head.left;
+            if(nextHead ==null){
+                return;
+            }
+            while(head != null){
+                head.left.next=head.right;
+                if(head.next != null){
+                    head.right.next=head.next.left;
+                }
+                head=head.next;
+            }
+            head=nextHead;
+        }
+            
+    }
 }
