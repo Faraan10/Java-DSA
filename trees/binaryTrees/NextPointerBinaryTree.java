@@ -22,6 +22,10 @@ public class NextPointerBinaryTree {
     // SC: O(N) using queue for storing nodes
     public void solveNextPointer(TreeLinkNode root){
 
+        if(root==null){
+            return;
+        }
+
         // here below I a using BFS approach using queue
         // as Queue is an Interface we have to to either LinkedList or Arraydeque
 
