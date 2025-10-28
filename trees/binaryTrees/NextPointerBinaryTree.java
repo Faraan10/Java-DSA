@@ -56,7 +56,8 @@ public class NextPointerBinaryTree {
 
 
     // optimized approach
-
+    // TC: O(N)
+    // SC: O(1)
     public void solve(TreeLinkNode root){
 
         TreeLinkNode head=root;
