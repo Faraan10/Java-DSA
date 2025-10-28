@@ -1,4 +1,5 @@
 package trees.binaryTrees;
+import java.util.*;
 
 class TreeLinkNode{
 
@@ -17,5 +18,13 @@ class TreeLinkNode{
 
 public class NextPointerBinaryTree {
     
-    
+    public void solveNextPointer(TreeLinkNode root){
+
+        // here below I a using BFS approach using queue
+        // as Queue is an Interface we have to to either LinkedList or Arraydeque
+
+        Queue<TreeLinkNode> que=new LinkedList<>();
+
+        
+    }
 }
