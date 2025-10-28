@@ -25,6 +25,26 @@ public class NextPointerBinaryTree {
 
         Queue<TreeLinkNode> que=new LinkedList<>();
 
+        que.add(root);
+        TreeLinkNode prev=null;
         
+        while(!que.isEmpty()){
+
+            int size=que.size();
+            TreeLinkNode curr=que.remove();
+
+            for(int i=0; i<size; i++){
+
+                if(prev != null){
+                    prev.next=curr;
+                }
+                prev=curr;
+
+                if(curr.left != null) que.add(curr.left);
+                if(curr.right != null) que.add(curr.right);
+
+                prev.next=null;
+            }
+        }
     }
 }
