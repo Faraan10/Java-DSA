@@ -2,6 +2,8 @@ package trees.binaryTrees;
 
 public class DiameterOfTree {
     
+    // TC: O(N)
+    // SC: O(h)
     int diameter;
 
     int getMaxLength(TreeNode root){
