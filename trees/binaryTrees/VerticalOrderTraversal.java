@@ -7,6 +7,8 @@ import java.util.Queue;
 
 public class VerticalOrderTraversal {
     
+    // TC: O(N)
+    // SC: O(N)
     public ArrayList<ArrayList<Integer>> verticalOrderTraversal(TreeNode A) {
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
         if (A == null) return ans;
