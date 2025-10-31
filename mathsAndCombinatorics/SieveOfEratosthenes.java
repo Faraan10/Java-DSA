@@ -4,6 +4,8 @@ import java.util.*;
 
 public class SieveOfEratosthenes{
 
+    // TC: O(A log log A)
+    // SC: O(A)
     public ArrayList<Integer> primes(int A){
 
         ArrayList<Integer> list=new ArrayList<>();
@@ -13,11 +15,16 @@ public class SieveOfEratosthenes{
         isPrime[0]=false; // setting false as 0 is not prime
         isPrime[1]=false; // setting false as 1 is not prime
 
-        for(int i=2; i<=A; i++){
+        for(int i=2; i*i<=A; i++){
             if(isPrime[i]){
                 for(long j=(long)i*i; j<=A; j=j+i){
                     isPrime[(int)j]=false;
                 }
+            }
+        }
+
+        for(int i=2; i<=A; i++){
+            if(isPrime[i]){
                 list.add(i);
             }
         }
