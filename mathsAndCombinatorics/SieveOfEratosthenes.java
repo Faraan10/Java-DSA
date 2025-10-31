@@ -13,7 +13,7 @@ public class SieveOfEratosthenes{
         isPrime[0]=false; // setting false as 0 is not prime
         isPrime[1]=false; // setting false as 1 is not prime
 
-        for(int i=2; i*i<=A; i++){
+        for(int i=2; i<=A; i++){
             if(isPrime[i]){
                 for(long j=(long)i*i; j<=A; j=j+i){
                     isPrime[(int)j]=false;
