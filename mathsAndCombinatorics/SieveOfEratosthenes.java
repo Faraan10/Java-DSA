@@ -31,4 +31,43 @@ public class SieveOfEratosthenes{
 
         return list;
     }
+
+    public int countSpecialPrimes(int A){
+
+        int count=0;
+
+        boolean[] isPrime=new boolean[A+1];
+        Arrays.fill(isPrime, true);
+        isPrime[0]=false;
+        isPrime[1]=false;
+
+        for(int i=2; i*i<=A; i++){
+            if(isPrime[i]){
+                for(long j=(long)i*i; j<=A; j=j+i){
+                    isPrime[(int)j]=false;
+                }
+            }
+        }
+
+        for(int i=2; i<=A; i++){
+            if(isPrime[i]){
+                int sum=sumOfNo(i);
+                if(sum<=A && isPrime[sum]){
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    public int sumOfNo(int N){
+
+        int ans=0;
+        while(N!=0){
+            int sum=N%10;
+            ans=ans+sum;
+            N=N/10;
+        }
+        return ans;
+    }
 }
