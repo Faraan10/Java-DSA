@@ -1,8 +1,11 @@
 package twoPointersApproach;
 import java.util.*;
 
+// random name given to problem
 public class RescueBoats {
     
+    // TC: O(N log N)
+    // SC: O(1)
     public int solve(int[] A, int B){
 
         int count=0;
