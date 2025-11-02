@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class LargestAreaInHistogram {
     
+    // TC: O(N)
+    // SC: O(N)
     public int[] leftSmallerArray(int[] A){
 
         int N=A.length;
