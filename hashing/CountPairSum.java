@@ -21,6 +21,15 @@ public class CountPairSum {
             // if A[i] is there in ahshmap gets its value and then we do +1 to update frequency
             // else the function gets default vlaue which is 0 (second argument) and then do +1 to update frequency
             hm.put(A[i], hm.getOrDefault(A[i], 0)+1);
+
+            // or we can aslo do as below
+            // if(hm.containsKey(A[i])){
+            //     int val=hm.get(A[i]);
+            //     int newVal=val+1;
+            //     hm.put(A[i], newVal);
+            // }else{
+            //     hm.put(A[i], 1);
+            // }
         }
         return (int)count%1000000007;
     }
