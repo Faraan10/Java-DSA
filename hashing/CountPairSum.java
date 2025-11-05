@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 public class CountPairSum {
     
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int[] A, int B) {
 
         int N=A.length;
