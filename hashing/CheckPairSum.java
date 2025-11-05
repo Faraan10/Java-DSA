@@ -4,6 +4,8 @@ import java.util.HashSet;
 
 public class CheckPairSum {
     
+    // TC: O(N)
+    // SC: O(N) hashset
     public int solve(int A, int[] B) {
 
         HashSet<Integer> hs=new HashSet<>();
