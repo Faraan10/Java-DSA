@@ -1,4 +1,5 @@
 package arrays;
+import java.util.HashSet;
 
 public class GoodPair {
     
@@ -20,4 +21,22 @@ public class GoodPair {
     //     }
     //     return 0;
     // }
+
+    
+    public int solve(int[] A, int B){
+
+        int N=A.length;
+
+        HashSet<Integer> hs=new HashSet<>();
+
+        for(int i=0; i<N; i++){
+            int compliment=B-A[i];
+            if(hs.contains(compliment)){
+                return 1;
+            }else{
+                hs.add(A[i]);
+            }
+        }
+        return 0;
+    }
 }
