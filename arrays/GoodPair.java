@@ -22,7 +22,9 @@ public class GoodPair {
     //     return 0;
     // }
 
-    
+    // TC: O(N)
+    // SC: O(N)
+    // optimized method using hashset so space O(N) and using compliment method
     public int solve(int[] A, int B){
 
         int N=A.length;
