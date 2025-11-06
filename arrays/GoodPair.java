@@ -28,7 +28,6 @@ public class GoodPair {
     public int solve(int[] A, int B){
 
         int N=A.length;
-
         HashSet<Integer> hs=new HashSet<>();
 
         for(int i=0; i<N; i++){
