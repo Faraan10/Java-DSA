@@ -2,10 +2,13 @@ package arrays;
 
 public class ArrayRotation {
     
+    // TC: O(N)
+    // SC: O(1)
     public int[] solve(int[] A, int B) {
 
         int N=A.length;
-        B=B%N;
+        B=B%N; // using this B=B%N so that the number will come in less range
+        // but will have same numbers when done with B 
 
         reverse(A, 0, N-1);
         reverse(A, 0, B-1);
