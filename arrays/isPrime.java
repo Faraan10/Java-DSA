@@ -2,6 +2,8 @@ package arrays;
 
 public class isPrime {
     
+    // TC: O(root A)
+    // SC: O(1)
     public int solve(int A) {
 
         if(A==1){
