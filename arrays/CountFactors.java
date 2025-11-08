@@ -2,6 +2,8 @@ package arrays;
 
 public class CountFactors {
     
+    // TC: O(root A)
+    // SC: O(1)
     public int solve(int A) {
 
        int count=0;
