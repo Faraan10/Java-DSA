@@ -5,7 +5,7 @@ public class CountOfPrimes {
     
     // TC: O(A root A) iterating till A times for the number and for each number
     // doing root A operations to find it is prime or not
-    // SC: O(1)
+    // SC: O(1
     public int solve(int A) {
 
         if(A<=1){
