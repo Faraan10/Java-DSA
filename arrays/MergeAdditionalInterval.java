@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class MergeAdditionalInterval {
+
+    // TC: O(A log A)
+    // SC: O(A)
     public ArrayList<ArrayList<Integer>> insert(ArrayList<ArrayList<Integer>> A, ArrayList<Integer> B) {
 
         ArrayList<ArrayList<Integer>> ans=new ArrayList<>();
