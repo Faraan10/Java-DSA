@@ -2,6 +2,8 @@ package prefix_sum;
 
 public class SpecialIndex {
     
+    // TC: O(N^2)
+    // SC: O(1)
     public int solve(int[] A) {
 
         int N=A.length;
