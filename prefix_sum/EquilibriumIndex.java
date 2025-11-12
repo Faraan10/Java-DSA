@@ -2,6 +2,9 @@ package prefix_sum;
 
 public class EquilibriumIndex {
     
+    // TC: O(N^2)
+    // SC: O(1)
+    // brute force approach
     public int solve(int[] A) {
 
         int N=A.length;
