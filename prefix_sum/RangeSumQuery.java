@@ -2,6 +2,9 @@ package prefix_sum;
 
 public class RangeSumQuery {
     
+    // TC: O(B*A)
+    // SC: O(1)
+    // brute force approach
     public long[] rangeSum(int[] A, int[][] B) {
 
         long[] arr=new long[B.length];
