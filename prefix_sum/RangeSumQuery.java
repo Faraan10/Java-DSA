@@ -24,7 +24,8 @@ public class RangeSumQuery {
 
 
     // opotimzed using prefix sum approach
-    
+    // TC: O(N)
+    // SC: O(N)
     public long[] rangeSum(int[] A, int[][] B) {
 
         int N=A.length;
