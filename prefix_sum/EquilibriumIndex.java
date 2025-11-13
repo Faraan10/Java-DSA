@@ -64,6 +64,8 @@ public class EquilibriumIndex {
     // here is the most optimized approach by using running sum so no additional 
     // space as I am avoiding prefix array storing
 
+    // TC: O(N)
+    // SC: O(1)
     public int optimizedPrefix(int[] A){
 
         int N=A.length;
