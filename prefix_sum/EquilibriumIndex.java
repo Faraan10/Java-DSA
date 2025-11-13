@@ -31,7 +31,8 @@ public class EquilibriumIndex {
     
 
     // optimzed approach with prefix sum
-    
+    // TC: O(N)
+    // SC: O(N)
     public int prefix(int[] A) {
 
         int N=A.length;
