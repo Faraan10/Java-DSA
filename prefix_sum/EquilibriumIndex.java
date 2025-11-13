@@ -27,4 +27,35 @@ public class EquilibriumIndex {
         }
         return ans;
     }
+
+    
+
+    // optimzed approach with prefix sum
+    
+    public int prefix(int[] A) {
+
+        int N=A.length;
+
+        int[] arr=new int[N];
+        arr[0]=A[0];
+        for(int i=1; i<N; i++){
+            arr[i]=arr[i-1]+A[i];
+        }
+
+        int totalSum=arr[N-1];
+        for(int i=0; i<N; i++){
+            int leftSum=0;
+            if(i==0){
+                leftSum=0;
+            }else{
+                leftSum=arr[i-1];
+            }
+            int rightSum=totalSum-leftSum-A[i];
+
+            if(leftSum==rightSum){
+                return i;
+            }
+        }
+        return -1;
+    }
 }
