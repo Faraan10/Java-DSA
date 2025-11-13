@@ -31,8 +31,8 @@ public class EquilibriumIndex {
     
 
     // optimzed approach with prefix sum
-    // TC: O(N)
-    // SC: O(N)
+    // TC: O(N) 
+    // SC: O(N) here as i am using prefix array so SC: O(N)
     public int prefix(int[] A) {
 
         int N=A.length;
@@ -57,6 +57,31 @@ public class EquilibriumIndex {
                 return i;
             }
         }
+        return -1;
+    }
+
+
+    // here is the most optimized approach by using running sum so no additional 
+    // space as I am avoiding prefix array storing
+
+    public int optimizedPrefix(int[] A){
+
+        int N=A.length;
+        int totalSum=0;
+        for(int i=0; i<N; i++){
+            totalSum+=A[i];
+        }
+
+        int leftSum=0;
+        for(int i=0; i<N; i++){
+
+            int rightSum=totalSum-leftSum-A[i];
+            if(leftSum==rightSum){
+                return i;
+            }
+            leftSum+=A[i];
+        }
+
         return -1;
     }
 }
