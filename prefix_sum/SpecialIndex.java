@@ -37,6 +37,8 @@ public class SpecialIndex {
 
     // optimized approach using prefix sum
     
+    // TC:O(N)
+    // SC: O(N)
     public int optimizedSolve(int[] A) {
 
         int N=A.length;
