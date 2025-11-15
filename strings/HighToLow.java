@@ -30,6 +30,8 @@ public class HighToLow {
         
         for(int i=0; i<N; i++){
             arr[i]=(char)((int)arr[i]+32); // this is explicit type casting
+            // first explicitly converting char to int to add 32 to it as it is char array
+            // then again converting it into char and then storing in charArray
         }
         return new String(arr); // here we have to return a new string
     }
