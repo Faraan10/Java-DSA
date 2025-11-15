@@ -16,4 +16,21 @@ public class HighToLow {
        }
        return str;
     }
+
+
+    // Note: prblem explicitly states that the given string contains only 
+    // uppercase alphabets so no need to apply if condition
+    // This is an optimized solution with 
+    // TC: O(N)
+    // SC: O(N) using char array as we must use at least O(N) space because strings are immutable in java.
+    public String optimezedSolve(String A) {
+
+        char[] arr=A.toCharArray(); // converting it to char array
+        int N=arr.length;
+        
+        for(int i=0; i<N; i++){
+            arr[i]=(char)((int)arr[i]+32); // this is explicit type casting
+        }
+        return new String(arr); // here we have to return a new string
+    }
 }
