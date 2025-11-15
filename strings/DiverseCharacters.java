@@ -2,6 +2,8 @@ package strings;
 
 public class DiverseCharacters {
     
+    // TC: O(N)
+    // SC: O(1)
     public int solve(final String A) {
 
         int N=A.length();
