@@ -2,6 +2,8 @@ package sliding_window;
 
 public class SubArrayWithGivenSumAndLength {
     
+    // TC: O(N)
+    // SC: O(1)
     public int solve(int[] A, int B, int C) {
 
         int N=A.length;
