@@ -2,6 +2,10 @@ package sliding_window;
 
 public class subArrayWithLeastAverage {
     
+    // TC: O(A)
+    // SC: O(1)
+    // Instead of calculating average we can directly calculate sum so which 
+    // ever windows sum is the least will be the least average on dividing
     public int solve(int[] A, int B) {
 
         int N=A.length;
