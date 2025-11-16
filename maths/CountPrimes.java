@@ -36,6 +36,8 @@ public class CountPrimes {
 
     // most optimized approach
     // Sieve of Eratosthenes
+    // TC: O(A log log A)
+    // SC: O(A)
     public int optimizedSolve(int A) {
 
         if(A<=1){
