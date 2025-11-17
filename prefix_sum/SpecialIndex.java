@@ -87,42 +87,45 @@ public class SpecialIndex {
 
         int N=A.length;
 
-        int[] even=new int[N];
-        int[] odd=new int[N];
-        even[0]=A[0];
-        odd[0]=0;
+        int[] evenPrefix=new int[N];
+        int[] oddPrefix=new int[N];
+        evenPrefix[0]=A[0];
+        oddPrefix[0]=0; // as 0 is not odd we dont add the first value
 
         for(int i=1; i<N; i++){
             if(i%2==0){
-                even[i]=even[i-1]+A[i];
+                evenPrefix[i]=evenPrefix[i-1]+A[i];
             }else{
-                even[i]=even[i-1];
+                evenPrefix[i]=evenPrefix[i-1];
             }
+        }
+
+        for(int i=1; i<N; i++){
             if(i%2==1){
-                odd[i]=odd[i-1]+A[i];
+                oddPrefix[i]=oddPrefix[i-1]+A[i];
             }else{
-                odd[i]=odd[i-1];
+                oddPrefix[i]=oddPrefix[i-1];
             }
         }
 
         int count=0;
-        int totalEven=even[N-1];
-        int totalOdd=odd[N-1];
         for(int i=0; i<N; i++){
+
             int leftEven;
             int leftOdd;
+
             if(i==0){
                 leftEven=0;
                 leftOdd=0;
             }else{
-                leftEven=even[i-1];
-                leftOdd=odd[i-1];
+                leftEven=evenPrefix[i-1]; // till left area before i left is left
+                leftOdd=oddPrefix[i-1]; // and right is right as index does not change
             }
 
-            int rightEven=totalOdd-odd[i];
-            int rightOdd=totalEven-even[i];
+            int rightEven=oddPrefix[N-1]-oddPrefix[i]; // on right even now right is odd 
+            int rightodd=evenPrefix[N-1]-evenPrefix[i]; // and odd is even
 
-            if(leftEven+rightEven == leftOdd+rightOdd){
+            if(leftEven+rightEven==leftOdd+rightodd){ // calculating even part and odd part if they are equal then increase count
                 count++;
             }
         }
