@@ -55,7 +55,13 @@ public class SpecialIndex {
 
             for(int j=0; j<N; j++){
                 if(i==j){
-                    continue;
+                    continue; // this statement changes the parity which means 
+                    // that when i==j it will continue (skip the current 
+                    // iteration and go to next ) so then code below it does not
+                    // execute and idx to does not increment.
+                    // So after i==j that is j+1 step the evenSum will store odd
+                    // and odd sum will store evenvalues which will give the 
+                    // right answer
                 }
 
                 if(index%2==0){
