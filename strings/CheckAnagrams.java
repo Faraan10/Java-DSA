@@ -2,6 +2,11 @@ package strings;
 
 public class CheckAnagrams {
     
+    // TC: O(A or B) which ever is greater ie: if A is greater O(A) else O(B)
+    // as we are iterating over them
+    // SC: O(1)  =only using constant space of array 26
+
+    // Note: the problem states that the strings are in lower case letters
     public int solve(String A, String B) {
 
         if(A.length() != B.length()){
