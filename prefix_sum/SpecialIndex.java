@@ -1,6 +1,44 @@
 package prefix_sum;
 
 public class SpecialIndex {
+
+
+    // brute force
+    // TC: O(N^2)
+    // SC: O(1)
+
+    public int bruteSolve(int[] A) {
+
+        int N=A.length;
+        int count=0;
+
+        for(int i=0; i<N; i++){
+
+            int evenSum=0;
+            int oddSum=0;
+
+            for(int j=0; j<i; j++){
+                if(j%2==0){
+                    evenSum+=A[j];
+                }else{
+                    oddSum+=A[j];
+                }
+            }
+
+            for(int j=i+1; j<N; j++){
+                if(j%2==0){
+                    oddSum+=A[j];
+                }else{
+                    evenSum+=A[j];
+                }
+            }
+
+            if(evenSum==oddSum){
+                count++;
+            }
+        }
+        return count;
+    }
     
     // TC: O(N^2)
     // SC: O(1)
