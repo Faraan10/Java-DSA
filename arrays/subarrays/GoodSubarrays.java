@@ -5,6 +5,10 @@ public class GoodSubarrays {
     // TC: O(N^2)
     // SC: O(1)
     // brute force
+
+     // here in this problem we cannot use sliding window as there is parity 
+     // sum>B and sum<B both array length even and array length odd 
+     // the problem statement should be monotonic
     public int solve(int[] A, int B) {
 
         int N=A.length;
@@ -22,32 +26,6 @@ public class GoodSubarrays {
                     count++;
                 }
             }
-        }
-        return count;
-    }
-
-
-    // optimized approach using sliding window shrinking window until sum>=B
-    // then counting the subarray
-
-    // TC: O(N)
-    // SC: O(1)
-    public int optimizedSolve(int[] A, int B) {
-
-        int N=A.length;
-        int left=0;
-        int sum=0;
-        int count=0;
-
-        for(int right=0; right<N; right++){
-            sum+=A[right];
-
-            while(sum>=B && left<=right){
-                sum=sum-A[left];
-                left++;
-            }
-
-            count=count+(right-left+1);
         }
         return count;
     }
