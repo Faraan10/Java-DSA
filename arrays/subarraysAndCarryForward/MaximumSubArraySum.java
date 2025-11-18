@@ -1,4 +1,4 @@
-package arrays.subarrays;
+package arrays.subarraysAndCarryForward;
 
 public class MaximumSubArraySum {
     
