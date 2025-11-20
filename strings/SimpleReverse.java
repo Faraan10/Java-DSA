@@ -1,6 +1,6 @@
 package strings;
 
-public class ReverseString {
+public class SimpleReverse {
     
     // TC: O(N)
     // SC: O(N)
