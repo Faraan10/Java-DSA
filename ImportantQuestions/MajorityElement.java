@@ -30,7 +30,9 @@ public class MajorityElement {
     }
 
 
-    
+    // Moore's Voting Algorithm
+    // TC: O(N)
+    // SC: O(1)
     public int optimizedMajorityElement(final int[] A) {
 
         int N=A.length;
