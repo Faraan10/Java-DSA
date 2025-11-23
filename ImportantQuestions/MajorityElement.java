@@ -28,4 +28,36 @@ public class MajorityElement {
         }
         return 0;
     }
+
+
+    
+    public int optimizedMajorityElement(final int[] A) {
+
+        int N=A.length;
+        int element=A[0];
+        int frequency=1;
+
+        for(int i=1; i<N; i++){
+            if(frequency==0){
+                element=A[i];
+                frequency=1;
+            }else if(element==A[i]){
+                frequency++;
+            }else{
+                frequency--;
+            }
+        }
+
+        int count=0;
+        for(int i=0; i<N; i++){
+            if(A[i]==element){
+                count++;
+            }
+        }
+
+        if(count>N/2){
+            return element;
+        }
+        return -1;
+    }
 }
