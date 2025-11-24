@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class MajorityElement {
     
     // TC: O(N)
-    // SC: O(N) using hashmap
+    // SC: O(N) using hashmap for the above solution
     public int majorityElement(final int[] A) {
 
         HashMap<Integer, Integer> hm=new HashMap<>();
@@ -30,7 +30,7 @@ public class MajorityElement {
     }
 
 
-    // Moore's Voting Algorithm
+    // Moore's Voting Algorithm 
     // TC: O(N)
     // SC: O(1)
     public int optimizedMajorityElement(final int[] A) {
