@@ -1,25 +1,23 @@
 package arrays;
 
 public class kadenesAlgorithm {
+
     // TC: O(N)
     // SC: O(1)
-    // public int maxSubArray(final int[] A) {
+    public int maxSubArraySum(final int[] A) {
 
-    //     int N=A.length;
-    //     int ans=Integer.MIN_VALUE;
-    //     int sum=0;
-
-    //     for(int i=0; i<N; i++){
-    //         if(sum<0){
-    //             sum=0;
-    //         }
-    //         sum+=A[i];
-    //         if(sum>ans){
-    //             ans=sum;
-    //         }
-    //     }
-    //     return ans;
-    // }
+        int N=A.length;
+        int ans=Integer.MIN_VALUE;
+        int sum=0;
+        for(int i=0; i<N; i++){
+            sum+=A[i];
+            ans=Math.max(ans, sum);
+            if(sum<0){
+                sum=0;
+            }
+        }
+        return ans;
+    }
 
 
     // in the below approach I am also including start and end 
