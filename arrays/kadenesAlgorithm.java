@@ -21,36 +21,43 @@ public class kadenesAlgorithm {
 
 
     // in the below approach I am also including start and end 
-    // index of the subarray
+    // indices of that subarray
     // TC: O(N)
     // SC: O(1)
-    public int[] maxSubArray(int[] arr){
-        
-        int temp_start=0;
-        int start_idx=0;
-        int end_idx=0;
-        int sum=Integer.MIN_VALUE;
-        int ans=0;
-        int N=arr.length;
-        int[] array=new int[3];
+    public int[] maxSubArray(final int[] A) {
 
+        int[] arr=new int[3];
+        int N=A.length;
+        int ans=A[0];
+        int sum=0;
+        
+        int start=0;
+        int end=0;
+        int startPoint=0;
         for(int i=0; i<N; i++){
 
-            if(ans<=0){
-                ans=0;
-                temp_start=i;
+            if (A[i] > ans) {
+                ans = A[i];
+                startPoint = i;
+                end = i;
             }
-            ans+=arr[i];
-            if(ans>sum){
-                sum=ans;
-                start_idx=temp_start;
-                end_idx=i;
+
+            sum+=A[i];
+            if(sum>ans){
+                ans=sum;
+                startPoint=start;
+                end=i;
+            }
+            if(sum<0){
+                sum=0;
+                start=i+1;
             }
         }
-        array[0]=start_idx;
-        array[1]=end_idx;
-        array[2]=sum;
 
-        return array;
+        arr[0]=startPoint;
+        arr[1]=end;
+        arr[2]=ans;
+
+        return arr;
     }
 }
