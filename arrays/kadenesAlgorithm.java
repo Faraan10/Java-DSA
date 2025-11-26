@@ -60,4 +60,17 @@ public class kadenesAlgorithm {
 
         return arr;
     }
+
+    public int kadenesSolve(int[] arr){
+
+        int N=arr.length;
+        int ans=Integer.MIN_VALUE;
+        int sum=0;
+
+        for(int i=0; i<N; i++){
+            sum=Math.max(arr[i], arr[i]+sum);
+            ans=Math.max(ans, sum);
+        }
+        return ans;
+    }
 }
