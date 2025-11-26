@@ -31,6 +31,7 @@ public class BeggarsOutsideTemple {
     // TC: O(N+Q) N= array length  Q=Queries length
     //SC: O(1)
     // Note: This implementation is 1 based indexing
+    // else --idx not needed and in second loop idx<=A
     public int[] ContinousSumQuery(int A, int[][] B){
 
         int[] array=new int[A];
