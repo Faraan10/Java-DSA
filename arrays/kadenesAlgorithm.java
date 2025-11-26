@@ -42,38 +42,33 @@ public class kadenesAlgorithm {
     // SC: O(1)
     public int[] maxSubArray(final int[] A) {
 
-        int[] arr=new int[3];
         int N=A.length;
-        int ans=A[0];
+        int ans=Integer.MIN_VALUE;
         int sum=0;
-        
-        int start=0;
-        int end=0;
-        int startPoint=0;
+        int start=-1;
+        int temp_start=-1;
+        int end=-1;
+
+        int[] array=new int[2];
+
         for(int i=0; i<N; i++){
 
-            if (A[i] > ans) {
-                ans = A[i];
-                startPoint = i;
-                end = i;
+            if(sum<=0){
+                sum=0;
+                temp_start=i;
             }
-
             sum+=A[i];
             if(sum>ans){
-                ans=sum;
-                startPoint=start;
+                start=temp_start;
                 end=i;
-            }
-            if(sum<0){
-                sum=0;
-                start=i+1;
+                ans=sum;
             }
         }
 
-        arr[0]=startPoint;
-        arr[1]=end;
-        arr[2]=ans;
-
-        return arr;
+        array[0]=start;
+        array[1]=end;
+        array[2]=ans;
+        
+        return array;
     }
 }
