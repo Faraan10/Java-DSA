@@ -2,6 +2,22 @@ package arrays;
 
 public class kadenesAlgorithm {
 
+    // kadenes algorithm simplified
+    // TC: O(N)
+    // SC: O(1)
+    public int kadenesSolve(int[] arr){
+
+        int N=arr.length;
+        int ans=Integer.MIN_VALUE;
+        int sum=0;
+
+        for(int i=0; i<N; i++){
+            sum=Math.max(arr[i], arr[i]+sum);
+            ans=Math.max(ans, sum);
+        }
+        return ans;
+    }
+
     // TC: O(N)
     // SC: O(1)
     public int maxSubArraySum(final int[] A) {
@@ -59,18 +75,5 @@ public class kadenesAlgorithm {
         arr[2]=ans;
 
         return arr;
-    }
-
-    public int kadenesSolve(int[] arr){
-
-        int N=arr.length;
-        int ans=Integer.MIN_VALUE;
-        int sum=0;
-
-        for(int i=0; i<N; i++){
-            sum=Math.max(arr[i], arr[i]+sum);
-            ans=Math.max(ans, sum);
-        }
-        return ans;
     }
 }
