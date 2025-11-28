@@ -4,7 +4,6 @@ public class kadenesAlgorithm {
 
     // kadenes algorithm simplified
     // TC: O(N)
-    // SC: O(1)
     public int kadenesSolve(int[] arr){
 
         int N=arr.length;
