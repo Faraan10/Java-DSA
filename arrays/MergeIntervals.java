@@ -5,6 +5,8 @@ import java.util.Collections;
 
 public class MergeIntervals {
     
+    // TC: O(N log N)
+    // SC: O(1)
     public ArrayList<ArrayList<Integer>> solve(ArrayList<ArrayList<Integer>> A) {
 
         ArrayList<ArrayList<Integer>> ans=new ArrayList<>();
