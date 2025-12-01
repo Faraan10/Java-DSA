@@ -3,7 +3,7 @@ package arrays;
 public class Flip {
     
     // TC: O(N)
-    // SC: O(1)
+    // SC: O(1) no extra space
     public int[] flip(String A) {
 
         int N=A.length();
