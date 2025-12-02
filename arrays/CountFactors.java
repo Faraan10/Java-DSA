@@ -2,7 +2,7 @@ package arrays;
 
 public class CountFactors {
     
-    // TC: O(root A)
+    // TC: O(root A) factors for 100 till 10
     // SC: O(1)
     public int solve(int A) {
 
