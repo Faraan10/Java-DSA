@@ -4,10 +4,11 @@ public class CountFactors {
     
     // TC: O(root A) factors for 100 till 10 
     // 10*10 =100
-    // 1 and 100 are factors
-    // 2 and 50 are factors
-    // 4 and 5 
-    // 10 and 10
+    // 1 and 100 are factors - so here 2 factors
+    // 2 and 50 are factors - so here 2 factors
+    // 4 and 25 are factors - so here 2 factors
+    // 5 and 20 are factors - so here 2 factors
+    // 10 and 10 are factors - so here 2 factors
     // SC: O(1)
     public int solve(int A) {
 
