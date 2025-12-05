@@ -1,6 +1,18 @@
 package oops;
 
 public class Student {
+
+    // class for creating single linked list
+    class ListNode{
+
+        int data;
+        ListNode next;
+
+        ListNode(int x){
+            data=x;
+            next=null;
+        }
+    }
     
     String name;
     String alias;
