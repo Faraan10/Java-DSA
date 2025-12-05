@@ -32,5 +32,28 @@ public class BeggarsOutsideTempleProblem {
     //SC: O(1)
     // Note: This implementation is 1 based indexing
     // else --idx not needed and in second loop idx<=A
-    
+    public int[] ContinousSumQuery(int A, int[][] B){
+
+        int[] array=new int[A];
+
+        for(int i=0; i<B.length; i++){
+            int idx=B[i][0];
+            int value=B[i][2];
+            array[--idx]+=value;
+        }
+
+        for(int i=0; i<B.length; i++){
+            int idx=B[i][1];
+            int value=B[i][2];
+            if(idx<A){
+                array[idx]-=value;
+            }
+        }
+
+        for(int i=1; i<array.length; i++){
+            array[i]=array[i-1]+array[i];
+        }
+
+        return array;
+    }
 }
