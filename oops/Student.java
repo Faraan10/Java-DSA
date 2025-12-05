@@ -13,6 +13,19 @@ public class Student {
             next=null;
         }
     }
+
+    // Tree class
+    class TreeNode{
+
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x){
+            left=null;
+            right=null;
+        }
+    }
     
     String name;
     String alias;
