@@ -15,15 +15,15 @@ public class Student {
     }
 
     // class fot creating double linked list 
-    class dNode{
+    class DNode{
 
         int data;
-        dNode next;
-        dNode prev;
+        DNode next;
+        DNode prev;
 
-        dNode(int val){
+        DNode(int val){
             data=val;
-            prev=
+            prev=null;
             next=null;
         }
     }
