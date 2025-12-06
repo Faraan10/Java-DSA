@@ -36,6 +36,7 @@ public class Student {
         TreeNode right;
 
         TreeNode(int x){
+            val=x;
             left=null;
             right=null;
         }
