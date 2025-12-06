@@ -14,6 +14,20 @@ public class Student {
         }
     }
 
+    // class fot creating double linked list 
+    class dNode{
+
+        int data;
+        dNode next;
+        dNode prev;
+
+        dNode(int val){
+            data=val;
+            prev=
+            next=null;
+        }
+    }
+
     // Tree class
     class TreeNode{
 
