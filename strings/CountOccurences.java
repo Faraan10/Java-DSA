@@ -1,7 +1,12 @@
 package strings;
 
+// Q) Find the number of occurrences of bob in string A consisting of lowercase 
+// English alphabets.
+
 public class CountOccurences {
     
+    // TC: O(N)
+    // SC: O(1)
     public int solve(String A) {
 
         int N=A.length();
