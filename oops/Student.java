@@ -14,7 +14,7 @@ public class Student {
         }
     }
 
-    // class fot creating double linked list 
+    // class for creating double linked list 
     class DNode{
 
         int data;
