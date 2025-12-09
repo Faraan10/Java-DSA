@@ -1,4 +1,4 @@
-package arrays.subarraysAndCarryForward
+package arrays.subarraysAndCarryForward;
 
 public class SubArrayInRange {
     
