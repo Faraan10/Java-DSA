@@ -2,6 +2,10 @@ package two_d_arrays.advance;
 
 public class SearchInRowWiseAndColumnWiseSortedMatrix {
     
+    // TC: O(N+M)
+    // because we are moving atmost N steps downwards and atmost M steps 
+    // sideways in this case to left as we are starting from top right position
+    // SC: O(1)
     public int solve(int[][] A, int B) {
 
         int N=A.length;
