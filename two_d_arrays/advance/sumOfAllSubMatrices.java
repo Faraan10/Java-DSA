@@ -27,5 +27,20 @@ public class sumOfAllSubMatrices {
         return sum;
     }
 
-    
+
+    public int optimizedSolve(int[][] A) {
+
+        int N=A.length;
+        int M=A[0].length;
+        long sum=0;
+
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                long topLeft=(long)(i+1)*(j+1);
+                long bottomRight=(long)(N-i)*(M-j);
+                sum+=A[i][j]*topLeft*bottomRight;
+            }
+        }
+        return (int)sum;
+    }
 }
