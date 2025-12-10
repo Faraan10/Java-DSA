@@ -28,6 +28,8 @@ public class sumOfAllSubMatrices {
     }
 
 
+    // TC: O(N*M)
+    // SC: O(1)
     public int optimizedSolve(int[][] A) {
 
         int N=A.length;
