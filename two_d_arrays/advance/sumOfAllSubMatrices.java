@@ -30,6 +30,42 @@ public class sumOfAllSubMatrices {
 
     // TC: O(N*M)
     // SC: O(1)
+
+// KEY IDEA
+
+// A submatrix is fully determined by two points:
+
+// ✔ Top-left corner → (i, j)
+// ✔ Bottom-right corner → (k, l)
+
+// Every submatrix in the matrix can be uniquely identified by choosing these 2 points.
+
+//     INTUITION
+
+// For any element A[i][j], imagine asking:
+
+//  “In how many submatrices does this element appear?”
+
+// To appear inside a submatrix:
+
+// The submatrix must start somewhere above/left of the element.
+
+// The submatrix must end somewhere below/right of the element.
+
+// So we count:
+
+// 1️⃣ Ways to choose a valid top-left corner of submatrix
+// 2️⃣ Ways to choose a valid bottom-right corner
+
+// Then multiply them.
+
+// Top-left choices = (i + 1) × (j + 1)
+// Bottom-right choices = (N - i) × (M - j)
+
+// So we multiply:
+
+// Total = (i+1) × (j+1) × (N-i) × (M-j)
+
     public int optimizedSolve(int[][] A) {
 
         int N=A.length;
