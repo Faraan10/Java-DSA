@@ -2,7 +2,8 @@ package two_d_arrays;
 
 public class AddMatrices {
     
-    
+    // TC: O(N*M)
+    // SC: O(1)
     public int[][] solve(int[][] A, int[][] B) {
 
         int N=A.length;
