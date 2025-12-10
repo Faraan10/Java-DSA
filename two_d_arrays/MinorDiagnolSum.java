@@ -2,7 +2,8 @@ package two_d_arrays;
 
 public class MinorDiagnolSum {
     
-    
+    // TC: O(N)
+    // SC: O(1)
     public int solve(final int[][] A) {
        
        int N=A.length;
