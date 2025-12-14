@@ -2,6 +2,8 @@ package contributionTechnique;
 
 public class SumOfAllSubarrays {
     
+    // TC: O(N)
+    // SC: O(1)
     public long subarraySum(int[] A) {
 
         int N=A.length;
