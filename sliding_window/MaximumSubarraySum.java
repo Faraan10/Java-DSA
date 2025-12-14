@@ -2,6 +2,8 @@ package sliding_window;
 
 public class MaximumSubarraySum {
     
+    // TC: O(A)
+    // SC: O(1)
     public int maxSubarray(int A, int B, int[] C) {
 
         int ans=0;
