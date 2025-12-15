@@ -2,7 +2,8 @@ package arrays;
 
 public class SecondLargest {
     
-    
+    // TC: O(N)
+    // SC: O(1)
     public int solve(int[] A) {
 
         int N=A.length;
