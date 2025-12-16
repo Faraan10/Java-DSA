@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class AddOneToNumber {
     
     // TC: O(N)
-    // SC: O(1) extra array space
+    // SC: O(N) extra array space
     public int[] plusOne(int[] A) {
 
         int N=A.length;
