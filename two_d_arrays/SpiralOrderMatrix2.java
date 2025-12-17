@@ -44,4 +44,45 @@ public class SpiralOrderMatrix2 {
 
         return mat;
     }
+
+    public int[][] generateMatrixSolve(int A) {
+
+        int[][] mat=new int[A][A];
+
+        int N=A;
+        int count=1;
+        int i=0;
+        int j=0;
+
+        while(N>1){
+
+            for(int k=0; k<N-1; k++){
+                mat[i][j]=count++;
+                j++;
+            }
+
+            for(int k=0; k<N-1; k++){
+                mat[i][j]=count++;
+                i++;
+            }
+
+            for(int k=0; k<N-1; k++){
+                mat[i][j]=count++;
+                j--;
+            }
+            
+            for(int k=0; k<N-1; k++){
+                mat[i][j]=count++;
+                i--;
+            }
+
+            i++;
+            j++;
+            N=N-2;
+        }
+        if(N==1){
+            mat[i][j]=count++;
+        }
+        return mat;
+    }
 }
