@@ -27,8 +27,8 @@ public class NextPermutation {
                 index=i-1;
                 break;
             }
-        }
-        // or below method 
+        } 
+        // or below method for above step (both will get the index for the element which is smaller)
         for(int i=N-2; i>=0; i--){
             if(A[i]<A[i+1]){
                 index=i;
