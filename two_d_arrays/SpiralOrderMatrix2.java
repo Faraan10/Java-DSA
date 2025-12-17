@@ -45,6 +45,9 @@ public class SpiralOrderMatrix2 {
         return mat;
     }
 
+
+    // TC: O(A^2)
+    // SC: O(1)
     public int[][] generateMatrixSolve(int A) {
 
         int[][] mat=new int[A][A];
