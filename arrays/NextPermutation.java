@@ -28,6 +28,13 @@ public class NextPermutation {
                 break;
             }
         }
+        // or below method 
+        for(int i=N-2; i>=0; i--){
+            if(A[i]<A[i+1]){
+                index=i;
+                break;
+            }
+        }
 
         // step:2 reversing whole array in ascending order if no element is smaller than A[i] from right
         // as per problem requirement
