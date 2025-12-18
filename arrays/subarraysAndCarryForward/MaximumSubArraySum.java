@@ -57,6 +57,8 @@ public class MaximumSubArraySum {
     // 1 <= B <= 10^9
     // 1 <= C[i] <= 10^6
     
+    // which means that when moving forward in sliding window the sum will
+    // always increase and when it is greater than B then we shrink the window
 
 
     public int optimizedMaxSubarray(int A, int B, int[] C) {
