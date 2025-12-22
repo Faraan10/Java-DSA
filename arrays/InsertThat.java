@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class InsertThat {
     
+    // TC: O(N)
+    // SC: O(N)
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
         // Please take input and print output to standard input/output (stdin/stdout)
