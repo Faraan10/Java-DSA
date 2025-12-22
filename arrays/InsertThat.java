@@ -1,5 +1,6 @@
 package arrays;
 
+
 import java.util.Scanner;
 
 public class InsertThat {
@@ -27,6 +28,7 @@ public class InsertThat {
         arr[X-1]=Y;
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]+" ");
-        }        
+        } 
+        sc.close();       
     }
 }
