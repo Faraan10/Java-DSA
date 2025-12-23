@@ -28,4 +28,31 @@ public class lcm {
         }
         sc.close();
     }
+
+
+    public static int hcf(int A, int B){
+
+        while(B!=0){
+            int temp=B;
+            B=A%B;
+            A=temp;
+        }
+        return A;
+    }
+    public static void m(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+        
+        
+        Scanner sc=new Scanner(System.in);
+
+        int A=sc.nextInt();
+        int B=sc.nextInt();
+
+        int val=hcf(A,B);
+        sc.close();
+        System.out.println((A/val)*B);
+    }
 }
