@@ -34,4 +34,17 @@ public class hcf {
         System.out.println(hcf);
         sc.close();
     }
+
+
+    // Method Name : Euclidean Algorithm
+    // for finding the HCF / GCD (Greatest Common Divisor).
+    public int hcfOfNumbers(int A, int B){
+
+        while(B!=0){
+            int temp=B;
+            B=A%B;
+            A=temp;
+        }
+        return A;
+    }
 }
