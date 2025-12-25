@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class armstrongNumber {
     
+    // printing all armstrong numbers from 1 to N inclusive
+    // TC: O(N log N)
+    // SC: O(1)
+
     public static int calculate(int base, int exp){
 
         int sum=1;
