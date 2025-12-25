@@ -31,8 +31,10 @@ public class PalindromicInteger {
         }
 
 
+        // TC: O(log N)
+        // SC: O(lon N)
         // boolean isPalin=true;
-        // String str=Integer.toString(N);
+        // String str=Integer.toString(N); because of this extra space
 
         // for(int i=0; i<str.length()/2; i++){
         //     if((str.charAt(i) != (str.charAt(str.length()-1-i)))){
