@@ -23,4 +23,8 @@ public class index {
         }
         return 0;
     }
+
+    public int maxEle(int[] A){
+        return 0;
+    }
 }
