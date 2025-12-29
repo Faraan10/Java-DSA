@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class AllIndicesOfArray {
     
+    // TC: O(N)
+    // SC: O(N)
     public ArrayList<Integer> printIndices(ArrayList<Integer> A, ArrayList<Integer> ans, int start, int B){
 
         if(start==A.size()){
