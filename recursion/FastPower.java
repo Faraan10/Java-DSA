@@ -7,7 +7,7 @@ public class FastPower {
     public long power(int A, int B) {
 
         if(B==0){
-            return 1;
+            return 1L;
         }
 
         // by using this below variable we will be computing the value 
