@@ -2,6 +2,8 @@ package hashing;
 
 public class SubArrayGivenSum {
     
+    // TC: O(N)
+    // SC: O(1)
     public int[] solve(int[] A, int B) {
 
         int N=A.length;
