@@ -2,6 +2,8 @@ package sorting;
 
 public class CountSort {
     
+    // TC: O(N + max)
+    // SC: O(max)
     public int[] solve(int[] A) {
 
         int N=A.length;
