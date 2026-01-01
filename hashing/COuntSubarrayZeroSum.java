@@ -2,8 +2,11 @@ package hashing;
 
 import java.util.HashMap;
 
-public class COuntSubarrayZeroSum {
+public class CountSubarrayZeroSum {
     
+    
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int[] A) {
 
         HashMap<Integer, Integer> hm=new HashMap<>();
@@ -19,7 +22,8 @@ public class COuntSubarrayZeroSum {
         int count=0;
         for(int i=0; i<N; i++){
             if(hm.containsKey(A[i])){
-                count=((count%mod)+(hm.get(A[i])%mod))%mod;
+                count=((count%mod)+(hm.get(A[i])%mod))%mod; // here using mod formula 
+                // (a+b)%m = ((a%m)+(b%m))%m so that the count will not overflow and stay within limits as per the constraints
             }
             hm.put(A[i], hm.getOrDefault(A[i], 0)+1);
         }
