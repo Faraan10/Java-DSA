@@ -3,6 +3,8 @@ package hashing;
 import java.util.HashMap;
 
 public class LongestSubarrayZeroSum {
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int[] A) {
 
          int N = A.length;
