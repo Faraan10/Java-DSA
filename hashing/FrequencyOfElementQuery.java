@@ -14,6 +14,7 @@ public class FrequencyOfElementQuery {
         for(int i=0; i<N; i++){
             if(hm.containsKey(A[i])){
                 hm.put(A[i], hm.getOrDefault(A[i], 0)+1);
+                // no need of above if statement and below else statement as the above line handles both cases
             }else{
                 hm.put(A[i], 1);
             }
