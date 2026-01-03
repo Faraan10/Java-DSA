@@ -30,7 +30,8 @@ public class FrequencyOfElementQuery {
         return arr;
     }
 
-
+    // TC: O(A+B)
+    // SC: O(A)
     public int[] optimizedSolve(int[] A, int[] B) {
 
         int N=A.length;
