@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class FrequencyOfElementQuery {
     
     // TC: O(A+B)
-    // SC: O(A)
+    // SC: O(B)
     public int[] solve(int[] A, int[] B) {
 
         HashMap<Integer, Integer> hm=new HashMap<>();
@@ -30,7 +30,7 @@ public class FrequencyOfElementQuery {
         return arr;
     }
 
-    
+
     public int[] optimizedSolve(int[] A, int[] B) {
 
         int N=A.length;
