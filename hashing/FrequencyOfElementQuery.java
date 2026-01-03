@@ -29,4 +29,24 @@ public class FrequencyOfElementQuery {
         }
         return arr;
     }
+
+    
+    public int[] optimizedSolve(int[] A, int[] B) {
+
+        int N=A.length;
+        HashMap<Integer, Integer> hm=new HashMap<>();
+
+        for(int i=0; i<N; i++){
+            hm.put(A[i], hm.getOrDefault(A[i], 0)+1);
+        }
+
+        int M=B.length;
+        int[] arr=new int[M];
+        for(int i=0; i<M; i++){
+            if(hm.containsKey(B[i])){
+                arr[i]=hm.get(B[i]);
+            }
+        }
+        return arr;
+    }
 }
