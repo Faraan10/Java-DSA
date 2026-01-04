@@ -2,6 +2,8 @@ package sorting.sortingAdvanced;
 
 public class InversionCountinArray {
     
+    // TC: O(N log N)
+    // SC: O(N)
     static long MOD = 1000000007;
     public int solve(int[] A) {
         int[] temp = new int[A.length];
