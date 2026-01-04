@@ -4,7 +4,7 @@ public class InversionCountinArray {
     
     // TC: O(N log N)
     // SC: O(N)
-    static long MOD = 1000000007;
+    static lon MOD = 1000000007;
     public int solve(int[] A) {
         int[] temp = new int[A.length];
         long ans = mergeSort(A, temp, 0, A.length - 1);
