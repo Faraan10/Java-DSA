@@ -48,6 +48,6 @@ public class InversionCountinArray {
             A[i] = temp[i];
         }
 
-        return invCount % MOD;
+        return invCount % MOD; // returning value
     }
 }
