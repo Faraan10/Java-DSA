@@ -48,6 +48,10 @@ public class SubArrayGivenSum {
     }
 
 
+    // TC: O(N)
+    // SC: O(N)
+    // Note: In this below method prefix sum + hashMap it will work for 
+    // the negative numbers as well
     public int[] optimizedSolve(int[] A, int B) {
 
         int N=A.length;
