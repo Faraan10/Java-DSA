@@ -4,6 +4,11 @@ public class SubArrayGivenSum {
     
     // TC: O(N)
     // SC: O(1)
+    // Note: In this problem all the numbers in array A are >=0 
+    // Only then this below approach will work as we are using sliding window
+    // for sliding window to work the array should be Monotonic in nature 
+    // which means expanding window -> sum should always increase
+    // shrinking window -> sum should always decrease
     public int[] solve(int[] A, int B) {
 
         int N=A.length;
