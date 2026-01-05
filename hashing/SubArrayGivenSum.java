@@ -61,6 +61,9 @@ public class SubArrayGivenSum {
         int end=-1;
 
         hm.put(0L, -1); // important storing 0 subarray 
+//Meaning:
+// before array starts, sum is 0 at index -1
+// This allows subarrays starting from index 0.
 
         for(int i=0; i<N; i++){
             prefixSum+=A[i];
