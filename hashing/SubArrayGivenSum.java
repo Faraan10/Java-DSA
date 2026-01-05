@@ -1,5 +1,7 @@
 package hashing;
 
+import java.util.HashMap;
+
 public class SubArrayGivenSum {
     
     // TC: O(N)
@@ -41,6 +43,39 @@ public class SubArrayGivenSum {
         int count=0;
         for(int i=start; i<=end; i++){
             arr[count++]=A[i];
+        }
+        return arr;
+    }
+
+
+    public int[] optimizedSolve(int[] A, int B) {
+
+        int N=A.length;
+        HashMap<Long, Integer> hm=new HashMap<>();
+        long prefixSum=0;
+        int start=-1;
+        int end=-1;
+
+        hm.put(0L, -1); // important storing 0 subarray 
+
+        for(int i=0; i<N; i++){
+            prefixSum+=A[i];
+
+            if(hm.containsKey(prefixSum-B)){
+                start=hm.get(prefixSum-B)+1;
+                end=i;
+                break;
+            }
+            if(!hm.containsKey(prefixSum)){
+                hm.put(prefixSum, i);
+            }
+        }
+        if(start==-1){
+            return new int[] {-1};
+        }
+        int[] arr=new int[end-start+1];
+        for(int i=start; i<=end; i++){
+            arr[i-start]=A[i];
         }
         return arr;
     }
