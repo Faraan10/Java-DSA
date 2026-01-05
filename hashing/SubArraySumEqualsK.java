@@ -76,6 +76,9 @@ public class SubArraySumEqualsK {
             }else{
                 hm.put(prefixSum, 1);
             }
+
+            // the above 6 lines or this below
+            hm.put(prefixSum, hm.getOrDefault(prefixSum, 0)+1);
         }
         return count;
     }
