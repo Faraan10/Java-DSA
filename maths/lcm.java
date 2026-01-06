@@ -30,6 +30,8 @@ public class lcm {
     }
 
 
+    // TC: O(log B)
+    // SC: O(1)
     public static int hcf(int A, int B){
 
         while(B!=0){
