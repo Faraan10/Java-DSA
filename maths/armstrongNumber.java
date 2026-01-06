@@ -8,48 +8,42 @@ public class armstrongNumber {
     // TC: O(N log N)
     // SC: O(1)
 
-    public static int calculate(int base, int exp){
+    public static int armstrong(int val, int count){
 
-        int sum=1;
-        for(int i=1; i<=exp; i++){
-            sum*=base;
+        int ans=1;
+        for(int i=1; i<=count; i++){
+            ans=ans*val;
         }
-        return sum;
+        return ans;
     }
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
         // Please take input and print output to standard input/output (stdin/stdout)
         // DO NOT USE ARGUMENTS FOR INPUTS
         // E.g. 'Scanner' for input & 'System.out' for output
-        
-        Scanner sc=new Scanner(System.in);
-        int N=sc.nextInt();    
-        
-        if(N==0){
-            System.out.println(0);
-            sc.close();
-            return;
-        }
 
-        for(int i=1; i<=N; i++){
-            int A=i;
+        Scanner sc=new Scanner(System.in);
+
+        int N=sc.nextInt();
+
+        for(int i=1; i<=N; i++){ // starting here as after 1 directly next armstrong number is 153
+
             int count=0;
-            while(A!=0){
-                A=A/10;
+            int number=i;
+            while(number!=0){
+                number=number/10;
                 count++;
             }
-
-            A=i;
             int sum=0;
-            while(A!=0){
-                int digit=A%10;
-                sum=sum+calculate(digit, count);
-                A=A/10;
+            number=i;
+            while(number!=0){
+                int digit=number%10;
+                sum=sum+armstrong(digit, count);
+                number=number/10;
             }
-            if(sum==i){
+            if(i==sum){
                 System.out.println(i);
             }
         }
-        sc.close();
     }
 }
