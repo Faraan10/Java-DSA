@@ -5,7 +5,14 @@ import java.util.Scanner;
 public class armstrongNumber {
     
     // printing all armstrong numbers from 1 to N inclusive
-    // TC: O(N log N)
+    // TC: N = input number
+    // D = number of digits (≈ log₁₀N)
+    // O(N × D × D)
+    // Why?
+
+    // Counting digits → O(D)
+    // For each digit → power loop O(D)
+
     // SC: O(1)
 
     public static int armstrong(int val, int count){
@@ -45,5 +52,6 @@ public class armstrongNumber {
                 System.out.println(i);
             }
         }
+        sc.close();
     }
 }
