@@ -38,6 +38,9 @@ public class hcf {
 
     // Method Name : Euclidean Algorithm
     // for finding the HCF / GCD (Greatest Common Divisor).
+
+    // TC: O(log B)
+    // SC: O(1)
     public int hcfOfNumbers(int A, int B){
 
         while(B!=0){
