@@ -2,6 +2,17 @@ package heaps;
 
 import java.util.PriorityQueue;
 
+
+// Why do we use PriorityQueue in heap problems?
+// Short answer:
+
+// Because Java does NOT expose a Heap class — PriorityQueue is Java’s heap implementation.
+
+// So when you solve heap problems in Java, you almost always use:
+// PriorityQueue
+
+
+
 public class ConnectRopes {
     
     // TC: O(N * log N)
