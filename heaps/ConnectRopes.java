@@ -11,7 +11,36 @@ import java.util.PriorityQueue;
 // So when you solve heap problems in Java, you almost always use:
 // PriorityQueue
 
+// Heap vs PriorityQueue (Important distinction)
+// 🔹 Heap (Data Structure)
 
+// Conceptual DS
+
+// Supports:
+
+// insert
+
+// extract min / max
+
+// Always a complete binary tree
+
+// Used when we need fast access to min or max
+
+// 🔹 PriorityQueue (Java Class)
+
+// Java’s implementation of heap
+
+// Internally uses Binary Heap
+
+// Provides:
+
+// add() → heap insert
+
+// peek() → min/max element
+
+// remove() / poll() → extract
+
+// 👉 So PriorityQueue = Heap in Java
 
 public class ConnectRopes {
     
