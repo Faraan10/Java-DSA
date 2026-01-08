@@ -2,6 +2,8 @@ package sorting.sortingAdvanced;
 
 public class DutchNationalFlag {
     
+    // TC: O(N)
+    // SC: O(N)
     public int[] sortColors(int[] A) {
 
         int N=A.length;
