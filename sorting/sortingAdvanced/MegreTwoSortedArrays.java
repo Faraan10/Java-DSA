@@ -2,6 +2,8 @@ package sorting.sortingAdvanced;
 
 public class MegreTwoSortedArrays {
     
+    // TC: O(N)
+    // SC: O(N+M)
     public int[] solve(final int[] A, final int[] B) {
 
         int N=A.length;
