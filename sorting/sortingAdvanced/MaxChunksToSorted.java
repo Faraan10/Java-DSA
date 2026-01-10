@@ -2,6 +2,8 @@ package sorting.sortingAdvanced;
 
 public class MaxChunksToSorted {
     
+    // TC: O(N)
+    // SC: O(1)
     public int solve(int[] A) {
 
         int maxSoFar = 0;
