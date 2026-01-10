@@ -1,4 +1,4 @@
-package sorting;
+package sorting.sortingAdvanced;
 
 public class QuickSort {
     
