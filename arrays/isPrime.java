@@ -20,6 +20,9 @@ public class isPrime {
 
         for(int i=2; i*i<=A; i++){
             // It should not be divisible by any i
+            // for ex if A=2
+            // this loop will not even run as 2*2<=2 = 4<=2 so it will exit loop
+            // so 2 is a prime number
             if(A%i==0){
                 return 0;
             }
