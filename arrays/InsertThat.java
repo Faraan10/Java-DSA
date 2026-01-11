@@ -23,7 +23,8 @@ public class InsertThat {
         }
         int X=sc.nextInt();
         int Y=sc.nextInt();
-
+    
+        // this problem constraint is to solve 1-based indexing
         for(int i=arr.length-1; i>=X; i--){
             arr[i]=arr[i-1];
         }
