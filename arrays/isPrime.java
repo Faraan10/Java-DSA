@@ -17,7 +17,9 @@ public class isPrime {
             return 0;
         }
         
+
         for(int i=2; i*i<=A; i++){
+            // It should not be divisible by any i
             if(A%i==0){
                 return 0;
             }
