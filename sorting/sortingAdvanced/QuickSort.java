@@ -4,6 +4,8 @@ public class QuickSort {
     
     // TC: O(NlogN) for best and average cases
     // worst case O(N^2)
+    // but worst case has a very minimal chance when we use randomized quick sort
+    // by selecting a random pivot
     // SC: O(logN) for best and average cases
     // worst case O(N)
     public int partition(int[] arr, int s, int e){
