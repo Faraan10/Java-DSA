@@ -17,6 +17,12 @@ class StudentInfo{
     int rollNo;
     int marks;
 
+    StudentInfo(){ // this is default constructor without parameters
+        name="Faraan";
+        rollNo=10;
+        marks=85;
+    }
+
     void printDetails(){
         System.out.println("Name is "+ name + " roll No is "+ rollNo + " and marks are "+ marks);
     }
