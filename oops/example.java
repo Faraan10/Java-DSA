@@ -23,6 +23,8 @@ class StudentInfo{
         marks=85;
     }
 
+    
+
     void printDetails(){
         System.out.println("Name is "+ name + " roll No is "+ rollNo + " and marks are "+ marks);
     }
