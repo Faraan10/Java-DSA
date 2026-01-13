@@ -38,9 +38,9 @@ public class example {
     
     public static void main(String[] args){
 
-        StudentInfo s1=new StudentInfo(); // creating with default constructor
+        StudentInfo s1=new StudentInfo(); // creating object with default constructor
 
-        StudentInfo s2=new StudentInfo("Goku", 100, 99);
+        StudentInfo s2=new StudentInfo("Goku", 100, 99); // creating object with parameterized constructor
 
         s1.printDetails(); // 
         s2.printDetails();
