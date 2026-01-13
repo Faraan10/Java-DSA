@@ -24,6 +24,8 @@ class StudentInfo{
     }
 
     StudentInfo(String name, int rollNo, int marks){ // this is parameterized constructor
+        // below using this.name is the name which refers to the current object which is defined inside the class
+        // and the value name assigned from the parameter is on right side
         this.name=name;
         this.rollNo=rollNo;
         this.marks=marks;
