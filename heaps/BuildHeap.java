@@ -2,6 +2,8 @@ package heaps;
 
 public class BuildHeap {
     
+    // TC: O(N)
+    // SC:O(1) in place
     public int[] buildHeap(int[] A) {
 
         int n = A.length;
