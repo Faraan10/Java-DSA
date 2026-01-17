@@ -4,6 +4,7 @@ public class IncreasingTripplets {
     
     // TC: O(N^2)
     // SC: O(1)
+    // auxilary space: O(1)
     public int solve(int[] A) {
         int n = A.length , ans = 0;
         for(int i = 0 ; i < n ; i++){
