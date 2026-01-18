@@ -2,6 +2,8 @@ package BinarySearch;
 
 public class SquareRootOfNumber {
     
+    // TC: O(log N)
+    // SC: O(1)
     public int sqrt(int A) {
 
         long low=1;
