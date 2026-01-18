@@ -2,7 +2,8 @@ package BinarySearch;
 
 public class PaintersPartition {
     
-    
+    // TC: O(N log N)
+    // SC:O(1)
     public static boolean isPossible(int P, int V, long mid, int[] arr){
 
         int N=arr.length;
