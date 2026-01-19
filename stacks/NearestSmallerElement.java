@@ -6,6 +6,8 @@ public class NearestSmallerElement {
     
     // TC: O(N)
     // SC: O(N)
+
+    // below solving problem using elements storing in the stack
     public int[] prevSmaller(int[] A) {
 
         int[] arr = new int[A.length];
