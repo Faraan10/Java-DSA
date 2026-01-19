@@ -2,6 +2,7 @@ package stacks;
 
 import java.util.Stack;
 
+// problem also called as postfix expression
 public class ReversePolishNotation {
     
     // TC: O(N) iterating through the array only once
