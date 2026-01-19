@@ -26,4 +26,14 @@ public class NearestSmallerElement {
         }
         return arr;
     }
+
+    // solving problem while storing the indices in the stack 
+    // better approach as using indices will have more flexibility 
+    public int[] prevSmallerIndices(int[] A){
+
+        int N=A.length;
+        int[] arr=new int[N];
+
+        return arr;
+    }
 }
