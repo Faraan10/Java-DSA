@@ -59,17 +59,19 @@ public class PaintersPartition {
 
 
     // better implementation
+    // same approach but using the variables and multiplication with 1 unit length
+    // in the end so that it reduces the confusion
     // TC: O(N log N)
     // SC: O(1)
 
-    public boolean isPossibleToPaint(int A, long max_limit, int[] arr){
+    public boolean isPossibleToPaint(int A, long max_time_to_paint, int[] arr){
 
         int N=arr.length;
         int count=1; // 1st painter
         long sum=0;
         for(int i=0; i<N; i++){
             sum+=arr[i];
-            if(sum>max_limit){
+            if(sum>max_time_to_paint){
                 count++;
                 sum=arr[i];
             }
