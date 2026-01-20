@@ -55,4 +55,54 @@ public class PaintersPartition {
         }
         return (int)(ans%10000003);
     }
+
+
+
+    // better implementation
+    // TC: O(N log N)
+    // SC: O(1)
+
+    public boolean isPossibleToPaint(int A, long max_limit, int[] arr){
+
+        int N=arr.length;
+        int count=1; // 1st painter
+        long sum=0;
+        for(int i=0; i<N; i++){
+            sum+=arr[i];
+            if(sum>max_limit){
+                count++;
+                sum=arr[i];
+            }
+            if(count>A){
+                return false;
+            }
+        }
+        return true;
+    }
+    public int betterPaint(int A, int B, int[] C) {
+
+        int N=C.length;
+        int max=C[0];
+        int sum=C[0];
+        for(int i=1; i<N; i++){
+            max=Math.max(max, C[i]);
+            sum+=C[i];
+        }
+
+        long low=max;
+        long high=sum;
+        long ans=0;
+        while(low<=high){
+
+            long mid=low+(high-low)/2;
+
+            if(isPossibleToPaint(A, mid, C)){
+                ans=mid;
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+        return (int)(ans*B%10000003);
+    }
 }
