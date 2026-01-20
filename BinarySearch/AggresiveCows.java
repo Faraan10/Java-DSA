@@ -27,7 +27,7 @@ public class AggresiveCows {
 
         Arrays.sort(A);
         int N=A.length;
-        int low=1;
+        int low=1; // lowest ditance between 2 cows
         int ans=0;
 
         int high=A[N-1]-A[0]; // calculating highest distance
