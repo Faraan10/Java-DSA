@@ -37,7 +37,7 @@ public class PaintersPartition {
         long ans=Integer.MAX_VALUE;
         for(int i=0; i<N; i++){
             if((long)C[i]*B>low){
-                low=C[i]*B;
+                low=(long)C[i]*B;
             }
             high+=(long)C[i]*B;
         }
