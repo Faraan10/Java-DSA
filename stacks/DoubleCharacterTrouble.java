@@ -24,7 +24,6 @@ public class DoubleCharacterTrouble{
         while(!st.isEmpty()){
             sb.append(st.pop());
         }
-        sb.reverse();
-        return sb.toString();
+        return sb.reverse().toString(); // we have to reverse first as removing from stack gives opposite order
     }
 }
