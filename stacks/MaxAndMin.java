@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class MaxAndMin {
     
+    // TC: O(N)
+    // SC: O(N)
     public int solve(int[] A) {
 
         int[] leftSmaller=leftSmallerIndex(A);
