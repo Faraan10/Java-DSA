@@ -63,7 +63,7 @@ public class QueueUsingStack {
     // }
 
 
-    // TC: push: O(1) pop: amortized O(1)  peek: amortized O(1)
+    // TC: push: O(1) , pop: amortized O(1) , peek: amortized O(1) , isEmpty: O(1)
     // SC: O(N) stack used
     public static class UserQueue {
     /** Initialize your data structure here. */
