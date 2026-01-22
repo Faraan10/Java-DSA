@@ -5,7 +5,9 @@ import java.util.Stack;
 public class QueueUsingStack {
 
 
-
+    // This below code is not optimized 
+    // TC: O(1) push , O(N) pop, O(N) peek and O(1) isEmpty()
+    // SC: O(N)
     // public static class UserQueue {
     // /** Initialize your data structure here. */
 
