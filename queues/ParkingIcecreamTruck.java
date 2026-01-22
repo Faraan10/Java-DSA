@@ -41,6 +41,9 @@ public class ParkingIcecreamTruck {
     }
 
 
+    // TC: O(N)
+    // SC: O(N)
+
     // another good way solving this problem same but using while loop
     // below first inital loop to make it more easy to understand
     public int[] differentApproachSlidingMaximum(final int[] A, int B) {
