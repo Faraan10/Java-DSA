@@ -29,6 +29,8 @@ public class index {
     }
 
 
+    // 24-01-2025
+    // parameterized way of writing recurion
     public int sumOfN(int sum, int i){
         
         if(i<1){
@@ -41,5 +43,41 @@ public class index {
     public int sum(int N){
 
         return sumOfN(0, N);
+    }
+
+    // functional way of writing recursive code
+    public int sumOfNumbers(int N){ 
+
+        if(N==0){
+            return 1;
+        }
+        return N+sumOfNumbers(N-1);
+    }
+    // suppose N=3,
+    // 3 + sumOfNumbers(3-1) -> so 3 + something it does not know yet 
+    // so it waits for that to return and calculates
+    // so now as sumOfNumbers(N-1) it calls the same function but with value 
+    // of N now is N-1 which is 2
+    // 2 + sumOfNumbers(2-1);
+    // Now value of N is 1 
+    // so it hits the base case 1==1 and returns 1 back to sumOfNumbers(2-1) 
+    // which is 1  and adds 2+1=3 and returns it to sumOfNumbers(3-1) value 3
+    // tehn finally it returns 3+3=6 as output
+
+    public void reverse(int start, int[] arr, int end){
+
+        if(start>=end){
+            return;
+        }   
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+
+        reverse(start+1, arr, end-1);
+    }
+    public int[] reverseArray(int[] arr){
+
+        reverse(0, arr, arr.length-1);
+        return arr;
     }
 }
