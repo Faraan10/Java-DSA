@@ -27,4 +27,19 @@ public class index {
     public int maxEle(int[] A){
         return 0;
     }
+
+
+    public int sumOfN(int sum, int i){
+        
+        if(i<1){
+            return sum;
+        }
+
+        return sumOfN(sum+i, i-1);
+        
+    }
+    public int sum(int N){
+
+        return sumOfN(0, N);
+    }
 }
