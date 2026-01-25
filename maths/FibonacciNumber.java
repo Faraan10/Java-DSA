@@ -4,7 +4,7 @@ public class FibonacciNumber {
     
     // Fibonacci problem iterative approach with array
     // TC: O(N)
-    // SC: O(1)
+    // SC: O(N)
     public int Fibonacci(int N){
 
         if(N==0){
@@ -23,4 +23,6 @@ public class FibonacciNumber {
 
         return arr[N];
     }
+
+
 }
