@@ -24,5 +24,22 @@ public class FibonacciNumber {
         return arr[N];
     }
 
+    // Fibonacci with less memory space iterative
+    // TC: O(N)
+    // SC: O(1)
+    public int fib(int N){
+
+        int firstPrevious=1;
+        int secondPrevious=0;
+        int sum=0;
+
+        for(int i=2; i<=N; i++){
+            sum=secondPrevious+firstPrevious;
+            secondPrevious=firstPrevious;
+            firstPrevious=sum;
+        }
+        return sum;
+    }
+
 
 }
