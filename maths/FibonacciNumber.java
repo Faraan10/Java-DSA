@@ -42,4 +42,16 @@ public class FibonacciNumber {
     }
 
 
+    // Fibonacci Recursive approach
+    public int FiboRecursive(int N){
+
+        if(N<=1){
+            return N;
+        }
+
+        return FiboRecursive(N-1)+FiboRecursive(N-2);
+    }
+    
+
+
 }
