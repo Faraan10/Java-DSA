@@ -43,6 +43,8 @@ public class FibonacciNumber {
 
 
     // Fibonacci Recursive approach functional method
+    // TC: O(2^N)
+    // SC: O(N)
     public int FiboRecursive(int N){
 
         if(N<=1){
