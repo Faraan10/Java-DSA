@@ -42,7 +42,7 @@ public class FibonacciNumber {
     }
 
 
-    // Fibonacci Recursive approach
+    // Fibonacci Recursive approach functional method
     public int FiboRecursive(int N){
 
         if(N<=1){
