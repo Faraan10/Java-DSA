@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class LeftViewBinaryTree {
     
+    // TC: O(N)
+    // SC: O(H)
     public ArrayList<Integer> solve(TreeNode A) {
 
         ArrayList<Integer> list=new ArrayList<>();
