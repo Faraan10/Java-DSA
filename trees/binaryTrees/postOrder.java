@@ -21,7 +21,7 @@ class TreeNode{
 public class postOrder {
     
     // TC: O(N)
-    // SC: O(H)
+    // SC: O(H) or O(N) as it max height of tree
     public ArrayList<Integer> postorderTraversal(TreeNode A) {
 
         ArrayList<Integer> ans=new ArrayList<>();
