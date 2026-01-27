@@ -1,6 +1,7 @@
 package trees.binaryTrees;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 
 class TreeNode{
@@ -38,5 +39,30 @@ public class PreOrderTraversal {
         ans.add(node.val);
         Ordering(node.left, ans);
         Ordering(node.right, ans);
+    }
+
+
+    // Iterative approach for preorder traversal using stack data structure
+    // TC: O(N)
+    // SC: O(N)
+    public ArrayList<Integer> preOrderIterative(TreeNode A){
+
+        ArrayList<Integer> list=new ArrayList<>();
+        Stack<TreeNode> st=new Stack<>();
+        st.push(A); // pusing root node
+
+        while(!st.isEmpty()){
+
+            TreeNode root=st.pop();
+            
+            list.add(root.val);
+            if(root.right != null){
+                st.push(root.right);
+            }
+            if(root.left != null){
+                st.push(root.left);
+            }
+        }
+        return list;
     }
 }
