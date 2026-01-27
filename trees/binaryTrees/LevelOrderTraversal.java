@@ -23,7 +23,7 @@ class TreeNode {
 
 public class LevelOrderTraversal {
     
-    // TC: O(A)
+    // TC: O(A) max no of nodes in the tree
     // SC: O(A) max height of tree
     public ArrayList<ArrayList<Integer>> solve(TreeNode A) {
 
