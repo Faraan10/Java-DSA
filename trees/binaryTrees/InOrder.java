@@ -1,6 +1,7 @@
 package trees.binaryTrees;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 class TreeNode{
 
@@ -37,5 +38,34 @@ public class InOrder {
         InOrderTraverse(node.left, list);
         list.add(node.val);
         InOrderTraverse(node.right, list);
+    }
+
+
+
+    // Inorder Iterative traversal using stack
+    // TC: O(N)
+    // SC: O(H)
+    public ArrayList<Integer> inorderTraversal(TreeNode A) {
+
+        ArrayList<Integer> list=new ArrayList<>();
+        Stack<TreeNode> st=new Stack<>();
+        TreeNode curr=A;
+
+        while(curr != null || !st.isEmpty()){
+
+            // go as left as possible 
+            while(curr != null){
+                st.push(curr);
+                curr=curr.left;
+            }
+
+            // process node
+            curr=st.pop();
+            list.add(curr.val);
+
+            // go to right subtree
+            curr=curr.right;
+        }
+        return list;
     }
 }
