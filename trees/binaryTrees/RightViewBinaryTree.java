@@ -48,4 +48,32 @@ public class RightViewBinaryTree {
         }
         return ans;
     }
+
+
+    // here below solving right view with recursive approach 
+    // more crisp and short code far better than iterative approach
+    // TC: O(N)
+    // SC: O(H)
+    public ArrayList<Integer> rightViewRecursive(TreeNode A) {
+
+        ArrayList<Integer> list=new ArrayList<>();
+
+        rightView(list, A, 0); // here 0 is the current depth level 
+                                // for tallying with arraylist size
+        return list;
+    }
+
+    public void rightView(ArrayList<Integer> list, TreeNode root, int currentDepth){
+
+        if(root==null){
+            return;
+        }
+
+        if(currentDepth==list.size()){
+            list.add(root.val);
+        }
+
+        rightView(list, root.right, currentDepth+1);
+        rightView(list, root.left, currentDepth+1);
+    }
 }
