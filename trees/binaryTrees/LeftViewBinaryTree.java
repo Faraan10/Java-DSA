@@ -11,7 +11,7 @@ public class LeftViewBinaryTree {
         ArrayList<Integer> list=new ArrayList<>();
 
         leftView(list, A, 0); // here 0 is the current depth level 
-                                // for tallying with arraylist size
+                                    // for tallying with arraylist size
         return list;
     }
 
