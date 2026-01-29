@@ -15,6 +15,8 @@ class TreeNode{
 
 public class HeightOfBinaryTree {
     
+    // TC: O(N)
+    // SC: O(N)
     public int height(TreeNode root){
 
         if(root.left==null || root.right==null){
