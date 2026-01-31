@@ -82,6 +82,8 @@ public class index {
     }
 
 
+    // TC: O(log A)
+    // SC: O(1)
     public int reverseNumber(int A){
 
         int N=A;
