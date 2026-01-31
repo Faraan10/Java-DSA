@@ -85,6 +85,17 @@ public class index {
     public int reverseNumber(int A){
 
         int N=A;
-        
+        int remainder=0;
+        while(N!=0){
+
+            int digit=N%10;
+            remainder=remainder*10+digit;
+            N=N/10;
+        }
+
+        if(remainder==A){
+            return 1;
+        }
+        return 0;
     }
 }
