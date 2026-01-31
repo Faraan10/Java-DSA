@@ -80,4 +80,11 @@ public class index {
         reverse(0, arr, arr.length-1);
         return arr;
     }
+
+
+    public int reverseNumber(int A){
+
+        int N=A;
+        
+    }
 }
