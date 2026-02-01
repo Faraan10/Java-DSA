@@ -64,22 +64,22 @@ public class index {
     // which is 1  and adds 2+1=3 and returns it to sumOfNumbers(3-1) value 3
     // tehn finally it returns 3+3=6 as output
 
-    public void reverse(int start, int[] arr, int end){
+    // public void reverse(int start, int[] arr, int end){
 
-        if(start>=end){
-            return;
-        }   
-        int temp=arr[start];
-        arr[start]=arr[end];
-        arr[end]=temp;
+    //     if(start>=end){
+    //         return;
+    //     }   
+    //     int temp=arr[start];
+    //     arr[start]=arr[end];
+    //     arr[end]=temp;
 
-        reverse(start+1, arr, end-1);
-    }
-    public int[] reverseArray(int[] arr){
+    //     reverse(start+1, arr, end-1);
+    // }
+    // public int[] reverseArray(int[] arr){
 
-        reverse(0, arr, arr.length-1);
-        return arr;
-    }
+    //     reverse(0, arr, arr.length-1);
+    //     return arr;
+    // }
 
 
     // TC: O(log A)
