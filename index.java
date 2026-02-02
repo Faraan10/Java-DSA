@@ -149,6 +149,24 @@ public class index {
         return sumOfNo(N-1)+N;
     }
 
+    // check if array is sorted or not using recursion
+    // TC: O(N)
+    // SC: O(N)
+    public int sortedArray(int i, int j, int[] arr){
+
+        if(j==arr.length){
+            return 1;
+        }
+        if(arr[i]>arr[j]){
+            return 0;
+        }
+        return sortedArray(i+1, j+1, arr);
+    }
+    public void arraySortedRecursive(int[] arr){
+
+        System.out.println(sortedArray(0, 1, arr));   
+    }
+
 
     public static void main(String[] args){
 
