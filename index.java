@@ -111,8 +111,18 @@ public class index {
         Numbers(i+1, N);
 
     }
+    // public void printNumbers(int N){
+    //     Numbers(1, N);
+    // }
+
+    // same problem without helper function
     public void printNumbers(int N){
-        Numbers(1, N);
+        
+        if(N==0){
+            return;
+        }
+        printNumbers(N-1);
+        System.out.print(N+" ");
     }
 
     public static void main(String[] args){
