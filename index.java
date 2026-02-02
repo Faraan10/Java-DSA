@@ -135,6 +135,8 @@ public class index {
         printNoReverse(N-1);
     }
 
+    // TC: O(N)
+    // SC: O(N) auxillary stack space
     public int sumOfNo(int N){
 
         if(N==0){
