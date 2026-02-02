@@ -101,6 +101,7 @@ public class index {
     //     return 0;
     // }
 
+    // from 1 to N
     public void Numbers(int i, int N){
 
         if(i==N){
@@ -124,12 +125,36 @@ public class index {
         printNumbers(N-1);
         System.out.print(N+" ");
     }
+    // from N to 1
+    public void printNoReverse(int N){
+
+        if(N==0){
+            return;
+        }
+        System.out.print(N+" ");
+        printNoReverse(N-1);
+    }
+
+    public int sumOfNo(int N){
+
+        if(N==0){
+            return 0;
+        }
+        // this always calculates sum when backtracking
+        // this is also called as post-order/backtracking computation
+        // we dont track this we just trust the return values
+        // this is functional way of writing code
+        return sumOfNo(N-1)+N;
+    }
+
 
     public static void main(String[] args){
 
         index s1=new index();
 
-        s1.printNumbers(10);
+        // s1.printNumbers(10);
+        // s1.printNoReverse(10);
 
+        System.out.println(s1.sumOfNo(5));
     }
 }
