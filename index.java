@@ -278,4 +278,17 @@ public class index {
 
         return factorial(N-1)*N;
     }
+
+
+    // TC: O(2^N) because we are computing same values 2 to 3 times 
+    // so TC grows exponentionally
+    // SC: O(N)
+    public int fibonacci(int N){
+
+        if(N<=1){
+            return N;
+        }
+
+        return fibonacci(N-1)+fibonacci(N-2);
+    }
 }
