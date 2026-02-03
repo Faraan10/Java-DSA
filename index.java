@@ -270,12 +270,12 @@ public class index {
 
     // TC: O(N)
     // SC: O(N)
-    public int fibonacci(int N){
+    public int factorial(int N){
 
         if(N==0){
             return 1;
         }
 
-        return fibonacci(N-1)*N;
+        return factorial(N-1)*N;
     }
 }
