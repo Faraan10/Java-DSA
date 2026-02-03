@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class index {
 
     // public boolean palin(String str, int start, int end){
@@ -152,21 +155,100 @@ public class index {
     // check if array is sorted or not using recursion
     // TC: O(N)
     // SC: O(N)
-    public int sortedArray(int i, int j, int[] arr){
+    // public int sortedArray(int i, int j, int[] arr){
 
-        if(j==arr.length){
-            return 1;
+    //     if(j==arr.length){
+    //         return 1;
+    //     }
+    //     if(arr[i]>arr[j]){
+    //         return 0;
+    //     }
+    //     return sortedArray(i+1, j+1, arr);
+    // }
+
+    public boolean sortedArray(int idx, int[] arr){
+
+        if(idx==arr.length-1){
+            return true;
         }
-        if(arr[i]>arr[j]){
-            return 0;
+
+        if(arr[idx]>arr[idx+1]){
+            return false;
         }
-        return sortedArray(i+1, j+1, arr);
-    }
-    public void arraySortedRecursive(int[] arr){
 
-        System.out.println(sortedArray(0, 1, arr));   
+        return sortedArray(idx+1, arr);
+    }
+    public boolean arraySortedRecursive(int[] arr){
+
+        // System.out.println(sortedArray(0, 1, arr));   
+        if(arr.length<=1){
+            return true;
+        }
+        return sortedArray(0, arr);
     }
 
+    public int firstIndexOfElement(int idx, int[] arr, int key){
+
+        if(idx==arr.length){
+            return -1;
+        }
+
+        if(arr[idx]==key){
+            return idx;
+        }
+        return firstIndexOfElement(idx+1, arr, key);
+    }
+    public int firstIndex(int[] arr, int key){
+
+        return firstIndexOfElement(0, arr, key);
+    }
+
+
+    public int lastIndexOfEle(int idx, int[] arr, int val){
+
+        if(idx<0){
+            return -1;
+        }
+        if(arr[idx]==val){
+            return idx;
+        }
+        return lastIndexOfEle(idx-1, arr, val);
+    }
+    public int lastIndex(int[] arr, int val){
+
+        return lastIndexOfEle(arr.length-1, arr, val);
+    }
+
+
+    public void allOccurences(int idx, int[] arr, ArrayList<Integer> ans, int key){
+
+        if(idx==arr.length){
+            return;
+        }
+
+        if(arr[idx]==key){
+            ans.add(idx);
+        }
+        
+        allOccurences(idx+1, arr, ans, key);
+    }
+
+    public int[] finAllOccurences(int[] arr, int key){
+
+        ArrayList<Integer> ans=new ArrayList<>();
+        allOccurences(0, arr, ans, key);
+
+        int[] A=new int[ans.size()];
+        if(ans.size()==0){
+            int[] res=new int[1];
+            res[0]=-1;
+            return res;
+        }
+        for(int i=0; i<A.length; i++){
+            A[i]=ans.get(i);
+        }
+        return A;
+    }
 
     public static void main(String[] args){
 
@@ -175,6 +257,25 @@ public class index {
         // s1.printNumbers(10);
         // s1.printNoReverse(10);
 
-        System.out.println(s1.sumOfNo(5));
+        // System.out.println(s1.sumOfNo(5));
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int[] arr=new int[N];
+        for(int i=0; i<N; i++){
+            arr[i]=sc.nextInt();
+        }
+        s1.arraySortedRecursive(arr);
+        sc.close();
+    }
+
+    // TC: O(N)
+    // SC: O(N)
+    public int fibonacci(int N){
+
+        if(N==0){
+            return 1;
+        }
+
+        return fibonacci(N-1)*N;
     }
 }
