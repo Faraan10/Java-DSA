@@ -291,4 +291,67 @@ public class index {
 
         return fibonacci(N-1)+fibonacci(N-2);
     }
+
+    // Tree class
+    class TreeNode{
+
+    int data;
+    TreeNode left;
+    TreeNode right;
+
+        // constructor
+        TreeNode(int x){
+            data=x;
+            left=null;
+            right=null;
+        }
+    }
+
+    public ArrayList<Integer> preOrderTraversal(TreeNode A){
+
+        if(A==null){
+            ArrayList<Integer> li=new ArrayList<>();
+            return li;
+        }
+        ArrayList<Integer> list=new ArrayList<>();
+        preOrder(list, A);
+        return list;
+    }
+
+    public void preOrder(ArrayList<Integer> list, TreeNode root){
+
+        if(root==null){
+            return;
+        }
+
+        list.add(root.data);
+        preOrder(list, root.left);
+        preOrder(list, root.right);
+    }
+
+    public int prime(int N){
+
+        if(N<=1){
+            return 0;
+        }
+        int count=0;
+        for(int i=1; i<=N; i++){
+            if(isPrime(N)){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public boolean isPrime(int N){
+
+        for(int i=2; i*i<=N; i++){
+            if(N%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
+
+
