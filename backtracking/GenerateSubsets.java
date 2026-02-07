@@ -27,6 +27,9 @@ public class GenerateSubsets {
     // }
 
 
+    // used backtracking approach here
+    // TC: O(2^N)
+    //SC: O(N)
     public void backtrack(ArrayList<ArrayList<Integer>> ans, ArrayList<Integer> list, ArrayList<Integer> A, int index){
         
         if(index==A.size()){
