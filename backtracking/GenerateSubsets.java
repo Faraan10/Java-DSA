@@ -47,6 +47,7 @@ public class GenerateSubsets {
         backtrack(ans, list, A, index+1);
     }
 
+    //calling backtrack function in this function below
     public ArrayList<ArrayList<Integer>> subsets(ArrayList<Integer> A) {
     
         ArrayList<ArrayList<Integer>> ans=new ArrayList<ArrayList<Integer>>();
