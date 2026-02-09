@@ -28,7 +28,7 @@ public class GenerateSubsets {
     // }
 
 
-    // used backtracking approach here with a backtrack function
+    // used backtracking approach here with a backtrack void function below
     // TC: O(2^N)
     //SC: O(N)
     public void backtrack(ArrayList<ArrayList<Integer>> ans, ArrayList<Integer> list, ArrayList<Integer> A, int index){
