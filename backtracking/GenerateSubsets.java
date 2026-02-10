@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class GenerateSubsets {
     
     public ArrayList<ArrayList<Integer>> subsetsFor(ArrayList<Integer> A) {
-        // code here
 
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         backtrack(A, 0, new ArrayList<>(), result);
