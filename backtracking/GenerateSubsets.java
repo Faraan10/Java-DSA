@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
     // TC: O(2^N * N)
     // SC: O(N)
+    // below using for loop
 public class GenerateSubsets {
     
     public ArrayList<ArrayList<Integer>> subsetsFor(ArrayList<Integer> A) {
