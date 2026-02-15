@@ -1,7 +1,6 @@
 package backtracking;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.ArrayList;
 
     // TC: O(2^N * N)
