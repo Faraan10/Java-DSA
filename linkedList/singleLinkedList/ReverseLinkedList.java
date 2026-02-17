@@ -15,6 +15,7 @@ public class ReverseLinkedList {
     
     // TC: O(N) travelling through entire linked list once
     // SC: O(1) only 3 variables used as pointers
+    // current, previos and next
     public ListNode reverseList(ListNode A) {
 
         ListNode current=A;
