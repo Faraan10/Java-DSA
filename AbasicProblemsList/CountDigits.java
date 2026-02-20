@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class CountDigits {
     
+    // TC: O(log T)
+    // SC: O(1)
+
     public static void main(String[] args) {
         // YOUR CODE GOES HERE
         // Please take input and print output to standard input/output (stdin/stdout)
@@ -26,8 +29,8 @@ public class CountDigits {
             }
             System.out.println(count);
             }
-            
             T--;
         }
+        sc.close();
     }
 }
