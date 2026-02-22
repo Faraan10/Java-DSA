@@ -24,6 +24,9 @@ public class palindromicInteger {
         //     System.out.println("No");
         // }
 
+        // TC: O(N)
+        // SC: O(1)
+
         Scanner sc=new Scanner(System.in);
         
         int N=sc.nextInt();
