@@ -2,6 +2,7 @@ package revision;
 
 public class countOfPairs {
     
+    // TC: O(N^2)
     public int countPairs(int[] A){
 
         int N=A.length;
