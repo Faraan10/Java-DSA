@@ -21,5 +21,26 @@ public class CountingSubarrays {
         return count;
     }
 
-    
+    // TC: O(N)
+    // SC: O(1)
+    public int optimizedSolve(int[] A, int B) {
+
+        int N=A.length;
+        int count=0;
+        int left=0;
+        int sum=0;
+
+        for(int right=0; right<N; right++){
+
+            sum+=A[right];
+
+            while(sum>=B && left<=right){
+                sum=sum-A[left];
+                left++;
+            }
+
+            count=count+(right-left+1);
+        }
+        return count;
+    }
 }
