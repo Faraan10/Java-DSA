@@ -2,6 +2,7 @@ package revision;
 
 public class SpecialElement {
     
+    // TC: O(N)
     public int specialEle(int[] A){
 
         int N=A.length;
