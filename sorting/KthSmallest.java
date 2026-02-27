@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class KthSmallest {
     
     // TC: O(N*B)
@@ -22,6 +24,15 @@ public class KthSmallest {
             A[i]=A[idx];
             A[idx]=temp;
         }
+        return A[B-1];
+    }
+
+    // TC: O(N log N)
+    // SC: O(1)
+    public int kthsmallestInBuiltSorting(final int[] A, int B) {
+
+        Arrays.sort(A);
+
         return A[B-1];
     }
 }
