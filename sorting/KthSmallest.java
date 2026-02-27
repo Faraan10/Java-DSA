@@ -3,7 +3,10 @@ package sorting;
 public class KthSmallest {
     
     // TC: O(N*B)
-    // SC: O(N)
+    // SC: O(1)
+    // This method is partial selection sort till B elements as you can see
+    // in first loop we are storing first B smaller elements in the array 
+    // and return A[B-1] element
     public int kthsmallest(final int[] A, int B) {
 
         for(int i=0; i<B; i++){
