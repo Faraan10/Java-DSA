@@ -1,6 +1,7 @@
 package sorting;
 
-import java.util.Arrays;
+// import java.util.Arrays;
+import java.util.*;
 
 public class KthSmallest {
     
@@ -40,8 +41,6 @@ public class KthSmallest {
     // SC: O(N)
     public int kthsmallestHeap(final int[] A, int B) {
 
-        Arrays.sort(A);
-
-        return A[B-1];
+        PriorityQueue pq=new PriorityQueue<>(Collections.ReverseOrder());
     }
 }
