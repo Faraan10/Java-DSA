@@ -35,4 +35,13 @@ public class KthSmallest {
 
         return A[B-1];
     }
+
+    // TC: O(N)
+    // SC: O(N)
+    public int kthsmallestHeap(final int[] A, int B) {
+
+        Arrays.sort(A);
+
+        return A[B-1];
+    }
 }
