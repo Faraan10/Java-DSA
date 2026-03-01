@@ -41,6 +41,19 @@ public class KthSmallest {
     // SC: O(N)
     public int kthsmallestHeap(final int[] A, int B) {
 
-        PriorityQueue pq=new PriorityQueue<>(Collections.ReverseOrder());
+        PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
+
+
+        for(int i=0; i<B; i++){
+            pq.add(A[i]);
+        }
+
+        for(int i=B; i<A.length; i++){
+            if(A[i]<pq.peek()){
+                pq.poll();
+                pq.add(A[i]);
+            }
+        }
+        return pq.peek();
     }
 }
