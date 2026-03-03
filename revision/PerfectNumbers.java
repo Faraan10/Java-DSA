@@ -2,6 +2,8 @@ package revision;
 
 public class PerfectNumbers {
     
+    // TC: O(N)
+    // SC: O(1)
     public int perfectNo(int N){
 
         int sum=0;
