@@ -68,7 +68,7 @@ public class PairExists {
             }else if(sum<K){
                 i++;
             }else{
-                j++;
+                j--;
             }
         }
         return 0;
