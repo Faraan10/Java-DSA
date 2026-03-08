@@ -2,6 +2,8 @@ package revision;
 
 public class StringReverse {
     
+    // TC: O(N)
+    // SC: O(1)
     public String solve(String A) {
 
         int N=A.length();
