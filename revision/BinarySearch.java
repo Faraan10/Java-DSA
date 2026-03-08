@@ -2,6 +2,7 @@ package revision;
 import java.util.*;
 
 public class BinarySearch {
+
     
     // finding this key k in the array
     // TC: O(log N)
