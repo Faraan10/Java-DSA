@@ -59,20 +59,34 @@ public class MajorityElement {
 
         int N=A.length;
         int majority=A[0];
-        int frequency=1;
+        int freq=1;
 
         for(int i=1; i<N; i++){
 
             if(majority==A[i]){
-                frequency++;
+                freq++;
             }else{
-                frequency--;
+                freq--;
             }
-            if(frequency==0){
+            if(freq==0){
                 majority=A[i];
-                frequency=1;
+                freq=1;
             }
         }
-        return majority;
+
+        // till here we get an element from the algorithm 
+        // now below we have to check whether it is actually majority or not
+        // if yes then return element else return 0 or depending on testcase
+
+        int count=0;
+        for(int i=0; i<N; i++){
+            if(A[i]==majority){
+                count++;
+            }
+        }
+        if(count>A.length/2){
+            return majority;
+        }
+        return A[0];
     }
 }
