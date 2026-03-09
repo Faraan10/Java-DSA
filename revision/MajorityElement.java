@@ -51,4 +51,28 @@ public class MajorityElement {
         }
         return A[0];
     }
+
+
+    // TC: O(N)
+    // SC: O(1)
+    public int majorityUsingMooresVotingAlgorithm(final int[] A){
+
+        int N=A.length;
+        int majority=A[0];
+        int frequency=1;
+
+        for(int i=1; i<N; i++){
+
+            if(majority==A[i]){
+                frequency++;
+            }else{
+                frequency--;
+            }
+            if(frequency==0){
+                majority=A[i];
+                frequency=1;
+            }
+        }
+        return majority;
+    }
 }
