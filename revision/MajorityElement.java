@@ -74,9 +74,10 @@ public class MajorityElement {
             }
         }
 
-        // till here we get an element from the algorithm 
-        // now below we have to check whether it is actually majority or not
-        // if yes then return element else return 0 or depending on testcase
+        // till here we get an element from the algorithm which has a value
+        // of majority element or has no majority below we have to check it
+        // If it actually is majority then return element else return 0
+        // or depending on testcase
 
         int count=0;
         for(int i=0; i<N; i++){
