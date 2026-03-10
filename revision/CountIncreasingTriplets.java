@@ -43,7 +43,9 @@ public class CountIncreasingTriplets {
                     right=right+1;
                 }
             }
-            count=count+(left*right);
+            count=count+(left*right); // we are multiplying here so if left
+            // is 0 or right is 0 then left+right sum will be 0 
+            // basic combinatorics problem
         }
 
         return count;
