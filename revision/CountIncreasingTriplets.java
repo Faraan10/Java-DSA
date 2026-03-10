@@ -19,4 +19,34 @@ public class CountIncreasingTriplets {
         }
         return count;
     }
+
+
+    // TC: O(N^2)
+    // SC: O(1)
+    public int optimizedSolve(int[] A) {
+
+        int N=A.length;
+        int count=0;
+        
+        for(int i=0; i<N; i++){
+
+            int left=0;
+            int right=0;
+            for(int j=0; j<i; j++){
+                if(A[j]<A[i]){
+                    left=left+1;
+                }
+            }
+
+            for(int j=i+1; j<N; j++){
+                if(A[i]<A[j]){
+                    right=right+1;
+                }
+            }
+            count=count+(left*right);
+        }
+
+        return count;
+    }
+
 }
