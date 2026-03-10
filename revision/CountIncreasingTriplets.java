@@ -2,6 +2,8 @@ package revision;
 
 public class CountIncreasingTriplets {
     
+    // TC: O(N^3)
+    // SC: O(1)
     public int solve(int[] A) {
 
         int N=A.length;
