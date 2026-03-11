@@ -24,4 +24,28 @@ public class MissingPositiveNumber {
         }
         return N+1;
     }
+
+
+    // TC: O(N)
+    // SC: O(1) This is a cyclic sort approach pattern
+    public int optimizedFirstMissingPositive(int[] A){
+        int N=A.length;
+
+        for(int i=0; i<N; i++){
+
+            while(A[i]>0 && A[i]<=N && A[i] != A[A[i]-1]){
+
+                int temp=A[i];
+                A[i]=A[temp-1];
+                A[temp-1]=temp;
+            }
+        }
+
+        for(int i=0; i<N; i++){
+            if(A[i] != i+1){
+                return i+1;
+            }
+        }
+        return N+1;
+    }
 }
