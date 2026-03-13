@@ -4,6 +4,7 @@ public class MissingPositiveNumber {
     
     // TC: O(N)
     // SC: O(N)
+    // Dry run this method
     public int firstMissingPositive(int[] A) {
 
         int N=A.length;
@@ -28,7 +29,7 @@ public class MissingPositiveNumber {
 
     // TC: O(N)
     // SC: O(1) This is a cyclic sort approach pattern
-    // Dry run this problem
+    // Dry run this method
     public int optimizedFirstMissingPositive(int[] A){
         int N=A.length;
 
