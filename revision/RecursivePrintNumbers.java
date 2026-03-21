@@ -13,8 +13,17 @@ public class RecursivePrintNumbers {
         }
         numbersPrinting(N-1);
         System.out.print(N+" ");
-
     }
+
+    public void numbersPrintingReverse(int N){
+
+        if(N==0){
+            return;
+        }
+        System.out.print(N+" ");
+        numbersPrinting(N-1);
+    }
+
     public void printNo(int N){
 
         numbersPrinting(N);
