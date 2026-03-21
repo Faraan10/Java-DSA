@@ -3,7 +3,7 @@ package revision;
 public class RecursivePrintNumbers {
 
     // TC: O(N)
-    // SC: O(N)
+    // SC: O(Ngit)
     // input: 8
     // output: 1,2,3,4,5,6,7,8
     public void numbersPrinting(int N){
