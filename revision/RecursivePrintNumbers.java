@@ -15,6 +15,10 @@ public class RecursivePrintNumbers {
         System.out.print(N+" ");
     }
 
+    // TC: O(N)
+    // SC: O(N)
+    // input: 8
+    // output: 8,7,6,5,4,3,2,1
     public void numbersPrintingReverse(int N){
 
         if(N==0){
