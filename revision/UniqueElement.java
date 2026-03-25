@@ -2,6 +2,9 @@ package revision;
 
 public class UniqueElement {
     
+    // TC: O(N)
+    // SC: O(1)
+    // inout: [2,3,4,5,3,2]
     public int unique(int[] A){
 
         int N=A.length;
