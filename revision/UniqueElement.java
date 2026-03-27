@@ -19,6 +19,10 @@ public class UniqueElement {
     }
 
 
+    // same problem but in this the numbers can exist any no of times
+    // only the number which occurs once will be returned as output
+    // TC: O(N)
+    // SC: O(N)
     public int uniqueEleMap(int[] A){
 
         int N=A.length;
