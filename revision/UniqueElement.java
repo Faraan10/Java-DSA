@@ -39,4 +39,23 @@ public class UniqueElement {
         }
         return -1;
     }
+
+
+    
+    public int uniqueEleSet(int[] A){
+
+        int N=A.length;
+        HashMap<Integer, Integer> hm=new HashMap<>();
+
+        for(int i=0; i<N; i++){
+            hm.put(A[i], hm.getOrDefault(A[i], 0)+1);
+        }
+
+        for(int i=0; i<N; i++){
+            if(hm.get(A[i])==1){
+                return A[i];
+            }
+        }
+        return -1;
+    }
 }
