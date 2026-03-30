@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class subsets {
     
+    // TC: O(2^N)
+    // SC: O(N)
     public ArrayList<ArrayList<Integer>> backtrackSubsets(int[] A){
 
         Arrays.sort(A);
