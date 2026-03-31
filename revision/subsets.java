@@ -8,6 +8,8 @@ public class subsets {
     // SC: O(N)
     public ArrayList<ArrayList<Integer>> backtrackSubsets(int[] A){
 
+        // this sorting is not required when elements are distinct in
+        // the given array
         Arrays.sort(A);
         ArrayList<ArrayList<Integer>> ans=new ArrayList<>();
         ArrayList<Integer> current=new ArrayList<>();
