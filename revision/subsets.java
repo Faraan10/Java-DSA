@@ -30,6 +30,8 @@ public class subsets {
 
         
         curr.remove(curr.size()-1);
+        // if distinct elements this below line is not required where we are
+        // skipping elements if the current element is equal to next one
         while(i+1<A.length && A[i]==A[i+1]){
             i++;
         }
