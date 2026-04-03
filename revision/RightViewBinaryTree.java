@@ -4,9 +4,20 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.swing.tree.TreeNode;
 
 public class RightViewBinaryTree {
+
+    class TreeNode{
+
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x){
+            val=x;
+            left=null;
+            right=null;
+        }
+    }
     
     // TC: O(N)
     // SC: O(N) as we used queue this is a BFS approach breadth first search
