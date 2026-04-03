@@ -13,36 +13,35 @@ public class SumBinaryTree {
             right=null;
         }
     }
-    
+
     
     public int solve(TreeNode A) {
-        
+
         if(A==null){
             return 1;
         }
 
-        if(A.left==null && A.right==null){
-            return 1;
-        }
-
-        if(sum(A) != -1){
+        if(isSum(A) != -1){
             return 1;
         }
         return 0;
     }
 
-    public int sum(TreeNode root){
+    public int isSum(TreeNode root){
 
-        if(root == null){
+        if(root==null){
             return 0;
         }
 
-        int leftSum=sum(root.left);
-        int rightSum=sum(root.right);
+        int leftSum=isSum(root.left);
+        int rightSum=isSum(root.right);
 
-        if((root.left==null && root.right==null) || (leftSum!=-1 && rightSum!=-1 && leftSum+rightSum==root.val)){
+        if((root.left==null && root.right==null) || (leftSum != -1 && rightSum != -1 && leftSum+rightSum==root.val)){
             return root.val+leftSum+rightSum;
         }
+
         return -1;
     }
+
+    
 }
