@@ -16,6 +16,9 @@ public class EqualTreePartition {
         }
     }
     
+    // TC: O(N)
+    // SC: O(N) it is O(N+H) but as H<N we say O(N) N because we are using 
+    // hashset and the depth of tree is O(H) 
     HashSet<Long> set=new HashSet<>();
     public int solve(TreeNode A) {
 
