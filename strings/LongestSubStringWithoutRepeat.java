@@ -3,6 +3,8 @@ import java.util.HashSet;
 
 public class LongestSubStringWithoutRepeat {
     
+    // TC: O(N)
+    // SC: O(N)
     public int longestSubStringValue(String S){
 
 
