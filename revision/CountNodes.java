@@ -35,30 +35,6 @@ public class CountNodes {
         int right=solve(root.right);
         return left+right+1;
     }
-
-
-
-
-
-    // practise 
-    // TC: O(N)
-    // SC: O(H)
-    public int nodeCount(NodeOfTree A){
-
-        return count(A);
-    }
-
-    public int count(NodeOfTree root){
-
-        if(root==null){
-            return 0;
-        }
-
-        int left=count(root.left);
-        int right=count(root.right);
-
-        return left+right+1;
-    }
 }
 
 
