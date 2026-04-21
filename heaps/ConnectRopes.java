@@ -52,6 +52,12 @@ public class ConnectRopes {
         // priority queue by natural ordering gives back smallest element when
         // peeking element or when removing but the priority queue is not sorted 
         // we can write as below to get the smallest element first or 
+        
+        // Note:
+        // PriorityQueue is NOT fully sorted like an array
+        // It only guarantees:
+        // Top element is correct (min or max depending on heap)
+        // Rest of elements are NOT in sorted order
         PriorityQueue<Integer> pq=new PriorityQueue<>();
         // we can write explicitly to but it follows returing smallest 
         // PriorityQueue<Integer> pqex=new PriorityQueue<>((a,b)-> Integer.compare(a,b));
@@ -67,8 +73,8 @@ public class ConnectRopes {
 
         int sum=0;
         while(pq.size()>1){
-            int rope1=pq.remove();
-            int rope2=pq.remove();
+            int rope1=pq.poll(); // poll is better than remove as it
+            int rope2=pq.poll(); // will return null instead of exception
             sum+=rope1+rope2;
             pq.add(rope1+rope2);
         }
