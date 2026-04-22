@@ -32,7 +32,8 @@ public class BuildHeap {
             A[i] = A[smallest];
             A[smallest] = temp;
 
-            heapify(A, n, smallest);
+            heapify(A, n, smallest); //we do this again till the element
+            // is in right place
         }
     }
 }
