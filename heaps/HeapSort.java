@@ -2,6 +2,8 @@ package heaps;
 
 public class HeapSort {
     
+    // TC: O(N log N)
+    // SC: O(1) no extra space
     public int[] HeapSortProblem(int[] A){
 
         int N=A.length;
