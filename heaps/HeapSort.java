@@ -8,7 +8,7 @@ public class HeapSort {
 
         int N=A.length;
         for(int i=N/2-1; i>=0; i--){
-            heapify(A, i);
+            heapify(A, N, i);
         }
 
         for(int i=N-1; i>0; i--){
@@ -17,15 +17,13 @@ public class HeapSort {
             A[0]=A[i];
             A[i]=temp;
 
-            heapify(A, i);
+            heapify(A, i, 0);
         }
 
         return A;
     }
 
-    public void heapify(int[] A, int i){
-
-        int N=A.length;
+    public void heapify(int[] A, int N, int i){
 
         while(true){
             int largest=i;
