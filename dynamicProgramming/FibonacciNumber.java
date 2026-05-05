@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class FibonacciNumber {
     
+    // There are 2 types of DP solutions -> 1) Memoization 2) Tabulation
+    // this below is the Memoization method storing values in array as cache
+    // and reusing them also called as top down approach
+
     // TC: O(N) reduces TC as we are doing memoization using array to store
     // already computated values so that we dont have to recompute again so 
     // we have N unique values once computed it just retuns the value instead
@@ -39,6 +43,40 @@ public class FibonacciNumber {
 
         int number=fib(N, dp);    
         System.out.println(number);
+        sc.close();
+    }
+
+
+    // This below is the Tabulation method
+    // using previous smaller subproblems solving the larger answer
+
+    // TC: O(N)
+    // SC: O(1)
+    public static void mains(String[] args) {
+        // YOUR CODE GOES HERE
+        // Please take input and print output to standard input/output (stdin/stdout)
+        // DO NOT USE ARGUMENTS FOR INPUTS
+        // E.g. 'Scanner' for input & 'System.out' for output
+
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+
+        if(N==0){
+            System.out.println(0);
+        }
+        if(N==1){
+            System.out.println(1);
+        }
+
+        int a=0;
+        int b=1;
+        int c=0;
+        for(int i=2; i<=N; i++){
+            c=a+b;
+            a=b;
+            b=c;
+        }
+        System.out.println(c);
         sc.close();
     }
 }
