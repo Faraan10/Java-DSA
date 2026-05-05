@@ -5,8 +5,12 @@ import java.util.Scanner;
 
 public class FibonacciNumber {
     
-    // TC: O(N)
-    // SC: O(N)
+    // TC: O(N) reduces TC as we are doing memoization using array to store
+    // already computated values so that we dont have to recompute again so 
+    // we have N unique values once computed it just retuns the value instead
+    // of recomputing again so we reduce TC from O(2^N) to O(N)
+    
+    // SC: O(N)  for the stack depth which is at most worst case O(N)
     public static int fib(int N, int[] dp){
 
         if(N==0 || N==1){
