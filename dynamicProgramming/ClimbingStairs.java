@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class ClimbingStairs {
     
+    // TC: O(N)
+    // SC: O(N)
     public int climbStairs(int A) {
 
         int[] dp=new int[A+1];
