@@ -1,6 +1,9 @@
 package knapsack;
 
 public class CuttingRod {
+
+    // TC: O(N^2)
+    // SC: O(N)
     public int solve(int[] A) {
 
         int N = A.length;
