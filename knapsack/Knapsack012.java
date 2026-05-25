@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Knapsack012 {
     
+    // TC: O(N^2)
+    // SC: O(N)
     public int solve(int[] A, int[] B, int C) {
 
         int N = A.length;
