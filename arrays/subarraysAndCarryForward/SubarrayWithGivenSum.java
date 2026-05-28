@@ -2,8 +2,7 @@ package arrays.subarraysAndCarryForward;
 
 public class SubarrayWithGivenSum {
     
-    // TC: O(N)
-    // SC: O(1)
+    
     public int[] solve(int[] A, int B) {
 
         int N=A.length;
