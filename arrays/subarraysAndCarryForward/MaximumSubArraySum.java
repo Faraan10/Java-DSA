@@ -63,6 +63,8 @@ public class MaximumSubArraySum {
     // until we get sum<=B then we get another element which has subarray <=B
     // then we can increase count 
 
+    // TC: O(N)
+    // SC: O(1)
     public int optimizedMaxSubarray(int A, int B, int[] C) {
 
         int ans=0;
