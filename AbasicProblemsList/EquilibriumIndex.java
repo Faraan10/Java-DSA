@@ -24,4 +24,31 @@ public class EquilibriumIndex {
         }
         return ans;
     }
+
+
+    // more optimized with good naming conventions and variables
+    // same tc and sc as above
+    // TC: O(N)
+    // SC: O(1)
+    public int optSolve(int[] A) {
+
+        int N=A.length;
+        int totalSum=0;
+
+        for(int i=0; i<N; i++){
+            totalSum+=A[i];
+        }
+
+        int left=0;
+        for(int i=0; i<N; i++){
+
+            int right=totalSum-left-A[i];
+
+            if(left==right){
+                return i;
+            }
+            left+=A[i];
+        }
+        return -1;
+    }
 }
