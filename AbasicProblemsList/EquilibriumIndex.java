@@ -8,16 +8,16 @@ public class EquilibriumIndex {
 
         int N=A.length;
         int ans=-1;
-        int sum=0;
+        int totalSum=0;
 
         for(int i=0; i<N; i++){
-            sum+=A[i];
+            totalSum+=A[i];
         }
 
         int val=0;
         for(int i=0; i<N; i++){
 
-            if(sum-A[i]==val){
+            if(totalSum-A[i]-val==val){
                 ans=i;
             }
             val+=A[i];
