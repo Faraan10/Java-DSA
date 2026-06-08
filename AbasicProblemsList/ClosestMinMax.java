@@ -14,7 +14,8 @@ public class ClosestMinMax {
         for(int i=0; i<N; i++){
             if(A[i]>max){
                 max=A[i];
-            }else if(A[i]<min){
+            }
+            if(A[i]<min){
                 min=A[i];
             }
         }
