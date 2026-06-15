@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class ElementsRemoval {
     
+    // TC: O(N log N)
+    // SC: O(1)
     public int solve(int[] A) {
 
         int N=A.length;
