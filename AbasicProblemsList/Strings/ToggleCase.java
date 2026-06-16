@@ -2,7 +2,7 @@ package AbasicProblemsList.Strings;
 
 public class ToggleCase {
     
-    // TC: O(N^2) // becaause everytime we create new string 
+    // TC: O(N^2) // because everytime we create new string 
     // when appening characters so loop O(N) and string 
     // creation O(N)
     // SC: O(1)
