@@ -1,4 +1,4 @@
-package AbasicProblemsList.Strings;
+package AllBasicProblemsList.Strings;
 
 public class ToggleCase {
     

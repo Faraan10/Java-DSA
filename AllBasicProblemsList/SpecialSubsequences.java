@@ -1,4 +1,4 @@
-package AbasicProblemsList;
+package AllBasicProblemsList;
 
 public class SpecialSubsequences {
     

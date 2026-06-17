@@ -1,4 +1,4 @@
-package AbasicProblemsList.TwoDMatrix;
+package AllBasicProblemsList.TwoDMatrix;
 
 public class RotateMatrixByNintyDegree {
     

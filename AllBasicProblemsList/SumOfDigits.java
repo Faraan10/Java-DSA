@@ -1,4 +1,4 @@
-package AbasicProblemsList;
+package AllBasicProblemsList;
 
 import java.util.Scanner;
 
