@@ -21,4 +21,23 @@ public class ToggleCase {
         }
         return str;
     }
+
+
+    // TC: O(N)
+    // SC: O(1)
+    public String optimizedSolve(String A) {
+
+        int N=A.length();
+
+        char[] arr=A.toCharArray();
+
+        for(int i=0; i<N; i++){
+            if(arr[i]>='a' && arr[i]<='z'){
+                arr[i]=(char)(arr[i]-32);
+            }else{
+                arr[i]=(char)(arr[i]+32);
+            }
+        }
+        return new String(arr);
+    }
 }
