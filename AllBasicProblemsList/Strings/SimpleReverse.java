@@ -40,4 +40,14 @@ public class SimpleReverse {
         }
         return new String(arr);
     }
+
+
+    // TC: O(N)
+    // SC: O(N)
+    public String stringBuilderSolve(String A) {
+
+        StringBuilder sb=new StringBuilder(A);
+
+        return sb.reverse().toString();
+    }
 }
