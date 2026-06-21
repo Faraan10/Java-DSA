@@ -46,6 +46,8 @@ public class MajorityElement {
 
 
         // Moores voting algorithm
+        // TC: O(N)
+        // SC: O(1)
 
         int N=A.length;
         int majority=A[0];
