@@ -50,31 +50,31 @@ public class MajorityElement {
         // SC: O(1)
 
         int N=A.length;
-        int majority=A[0];
-        int freq=1;
-
-        for(int i=1; i<N; i++){
-
-            if(majority==A[i]){
-                freq++;
-            }else{
-                freq--;
-            }
-            if(freq==0){
-                majority=A[i];
-                freq=1;
-            }
-        }
+        int candidate=0;
 
         int count=0;
         for(int i=0; i<N; i++){
-            if(A[i]==majority){
+
+            if(count==0){
+                candidate=A[i];
+                count=1;
+            }else if(candidate==A[i]){
                 count++;
+            }else{
+                count--;
             }
         }
-        if(count>A.length/2){
-            return majority;
+
+        int countCandidate=0;
+        for(int i=0; i<N; i++){
+            if(A[i]==candidate){
+                countCandidate++;
+            }
         }
-        return A[0];
+
+        if(countCandidate>N/2){
+            return candidate;
+        }
+        return -1;
     }
 }
