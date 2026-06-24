@@ -35,8 +35,17 @@ public class CountIncreasingTriplets {
             int left=0;
             int right=0;
             for(int j=0; j<i; j++){
-                if()
+                if(A[j]<A[i]){
+                    left=left+1;
+                }
             }
+
+            for(int j=i+1; j<N; j++){
+                if(A[i]<A[j]){
+                    right=right+1;
+                }
+            }
+            count=count+((long)left*right);
         }
         return (int)count;
     }
