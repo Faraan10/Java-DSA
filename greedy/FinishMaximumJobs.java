@@ -8,7 +8,7 @@ class FinishMaximumJobs{
     public int solve(int[] A, int[] B) {
         
         int N=A.length;
-        int[][] jobs=new int[N][2];
+        int[][] jobs=new int[N][2]; // here rows are N but columns are only 2 start and end points
 
         for(int i=0; i<N; i++){
 
