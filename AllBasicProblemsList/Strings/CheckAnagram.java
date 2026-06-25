@@ -2,6 +2,8 @@ package AllBasicProblemsList.Strings;
 
 public class CheckAnagram {
     
+    // TC: 0(N)
+    // SC: O(1)
     public int solve(String A, String B) {
 
         if(A.length() != B.length()){
