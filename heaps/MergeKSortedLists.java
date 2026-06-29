@@ -11,6 +11,8 @@ public class MergeKSortedLists {
        ListNode(int x) { val = x; next = null; }
     }
     
+    // TC: O(N log K)
+    // SC: O(K) as only 3 nodes will be in a heap at a time
     public ListNode mergeKLists(ArrayList<ListNode> a) {
 
         PriorityQueue<ListNode> heap=new PriorityQueue<>((x,y)-> x.val-y.val);
