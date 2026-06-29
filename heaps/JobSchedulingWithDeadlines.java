@@ -39,4 +39,47 @@ public class JobSchedulingWithDeadlines {
         }
         return (int)(profit%mod);
     }
+
+
+    // problem can also be done like this with own class 
+    class Item{
+
+        int expiry;
+        int profit;
+        Item(int expiry, int profit){
+            this.expiry=expiry;
+            this.profit=profit;
+        }
+    }
+
+    public Item[] buildAndSort(int[] A, int[] B){
+
+        int N=A.length;
+        Item[] items=new Item[N];
+        for(int i=0; i<N; i++){
+            items[i]=new Item(A[i], B[i]);
+        }
+        Arrays.sort(items, (x,y)-> Integer.compare(x.expiry, y.expiry));
+        return items;
+    }
+
+    public int diffSolve(int[] A, int[] B) {
+
+        Item[] items=buildAndSort(A, B);
+        PriorityQueue<Integer> pq=new PriorityQueue<>();
+        long profit=0;
+        int time=0;
+        for(Item item: items){
+            if(item.expiry > time){
+                pq.add(item.profit);
+                profit=profit+item.profit;
+                time++;
+            }else if(item.profit > pq.peek()){
+                profit=profit+item.profit;
+                profit=profit-pq.poll();
+                pq.add(item.profit);
+            }
+        }
+        return (int)(profit % 1000000007L);
+    }
 }
