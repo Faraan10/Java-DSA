@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class index {
 
@@ -351,6 +352,34 @@ public class index {
             }
         }
         return true;
+    }
+
+
+    // TC: O(N)
+    // SC:O(N)
+    public int dpFib(int N){
+
+        int[] A=new int[N+1];
+        Arrays.fill(A, -1);
+
+        int ans=ansDp(A, N);
+
+        return ans;
+    }
+
+    public int ansDp(int[] A, int N){
+
+        if(N<=1){
+            return N;
+        }
+
+        if(A[N] != -1){
+            return A[N];
+        }
+
+        A[N]=ansDp(A, N-1)+ansDp(A, N-2);
+
+        return ansDp(A, N-1)+ansDp(A, N-2);
     }
 }
 
