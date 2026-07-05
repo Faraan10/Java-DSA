@@ -381,6 +381,25 @@ public class index {
 
         return ansDp(A, N-1)+ansDp(A, N-2);
     }
+
+    
+    // TC: O(N)
+    // SC: O(1
+    // tabulation method
+    public static int Fibonacci(int N){
+
+        int a=0;
+        int b=1;
+        int sum=0;
+
+        for(int i=1; i<N; i++){
+
+            sum=a+b;
+            a=b;
+            b=sum;
+        }
+        return b;
+    }
 }
 
 
