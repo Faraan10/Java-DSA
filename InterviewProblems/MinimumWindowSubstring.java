@@ -3,6 +3,7 @@ package InterviewProblems;
 public class MinimumWindowSubstring {
     
     // This below is a sliding window approach
+    // used arrays instead of hashmap to save space 
 
     // TC: O(A+B)
     // SC: O(1)
