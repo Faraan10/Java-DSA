@@ -18,4 +18,16 @@ public class SumOfDigits {
 
         return N%10+calculate(N/10);
     }
+
+    // TC: O(N)
+    // SC: O(1)
+    public int iterativeCalculate(int N){
+
+        int sum=0;
+
+        for(int i=1; i<=N; i++){
+            sum+=i;
+        }
+        return sum;
+    }
 }
