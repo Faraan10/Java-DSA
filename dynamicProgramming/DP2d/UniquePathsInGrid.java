@@ -53,4 +53,51 @@ public class UniquePathsInGrid {
         return dp[i][j];
     }
 
+
+
+    // this is bottomup approach with tabulation dp array
+    // TC: O(N*M)
+    // SC: O(N*M)
+    public int uniquePathsWithObstaclesBottomUp(int[][] A) {
+
+        int N=A.length;
+        int M=A[0].length;
+
+        // as this is an obstacle the first index so we directly return 0 as
+        // we can traverse further 
+        // this below is based on the problem constraints 
+        if(A[0][0]==1){
+            return 0;
+        }
+        int[][] dp=new int[N][M];
+        dp[0][0]=1;
+
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                
+                if(i==0 && j==0){
+                    continue;
+                }
+
+                if(A[i][j]==1){
+                    dp[i][j]=0;
+                    continue;
+                }
+
+                int top=0;
+                int left=0;
+
+                if(i>0){
+                    top=dp[i-1][j];
+                }
+                if(j>0){
+                    left=dp[i][j-1];
+                }
+
+                dp[i][j]=top+left;
+            }
+        }
+        return dp[N-1][M-1];
+    }
+
 }
