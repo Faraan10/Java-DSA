@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class UniquePathsInGrid {
     
     // TC: O(N*M)
+    // for space complexity recursion stack is N+M 
+    // and also dp array N*M so,
     // SC: O(N*M)
     public int uniquePathsWithObstacles(int[][] A) {
 
@@ -22,17 +24,17 @@ public class UniquePathsInGrid {
     
     public int ways(int[][] A, int[][] dp, int i, int j) {
 
-        // Out of bounds
+        // if any index out of bounds
         if (i < 0 || j < 0) {
             return 0;
         }
 
-        // Obstacle
+        // if and Obstacle is there if matrix contains 1 return 0 
         if (A[i][j] == 1) {
             return 0;
         }
 
-        // Source reached
+        // Source reached 
         if (i == 0 && j == 0) {
             return 1;
         }
