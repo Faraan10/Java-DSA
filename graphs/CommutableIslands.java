@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class CommutableIslands {
     
+    // TC: O(M log M)
+    // SC: O(A)
     class DSU {
         int[] parent;
         int[] rank;
