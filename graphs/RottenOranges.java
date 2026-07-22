@@ -5,6 +5,8 @@ import java.util.Queue;
 
 public class RottenOranges {
     
+    // TC: O(N*M)
+    // SC: O(N*M)
     public int solve(int[][] A) {
 
         int n = A.length;
