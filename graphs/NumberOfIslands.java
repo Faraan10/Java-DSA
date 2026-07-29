@@ -2,6 +2,9 @@ package graphs;
 
 public class NumberOfIslands {
     
+
+    // TC: O(N*M)
+    // SC: O(N*M)
     int[] dx = {-1,-1,-1,0,0,1,1,1};
     int[] dy = {-1,0,1,-1,1,-1,0,1};
     
