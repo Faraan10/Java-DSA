@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class JumpGame2 {
     
+    // TC: O(N)
+    // SC: O(1)
     public int solve(ArrayList<Integer> A) {
 
         int n = A.size();
