@@ -2,9 +2,17 @@ package backtracking;
 
 public class KthSymbolHard {
     
+    // TC: O(1)
+    // SC: O(1)
+    public int solve(int A, Long B) {
+
+        return Long.bitCount(B) % 2;
+    }
+
+    // below using backtracking
     // TC: O(log B)
     // SC: O(log B)
-    public int solve(int A, Long B) {
+    public int backtrackSolve(int A, Long B) {
 
         return helper(A, B, 0);
     }
