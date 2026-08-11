@@ -7,7 +7,7 @@ public class MinStack {
     Stack<Integer> st1=new Stack<>();
     Stack<Integer> st2=new Stack<>();
 
-    // TC: O(1) for all operations
+    // TC: O(1) for all operations push, pop, top, getMin
     // SC: O(1)
     public void push(int x) {
 
