@@ -3,7 +3,7 @@ package linkedList.singleLinkedList;
 public class KReverseLinkedList {
     
     // TC: O(N)
-    // SC: O(1s)
+    // SC: O(1)
     public ListNode reverseList(ListNode A, int B) {
 
         ListNode current = A;
