@@ -5,7 +5,7 @@ import java.util.Stack;
 public class InfixToPostfix {
     
     // TC: O(N)
-    // SC: O(N)
+    // SC: O(N) 
     public String solve(String A) {
 
         Stack<Character> stack = new Stack<>();
