@@ -4,6 +4,8 @@ import java.util.Stack;
 
 public class MaxRectangleInBinaryMatrix {
     
+    // TC: O(N*M)
+    // SC: O(N)
     public int maximalRectangle(int[][] A) {
 
         int n = A.length;
