@@ -5,8 +5,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 
-    /**
- * Definition for binary tree **/
+    
+ /** Definition for binary tree **/
 class TreeNode {
     int val;
     TreeNode left;
